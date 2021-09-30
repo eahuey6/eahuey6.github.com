@@ -3,6 +3,14 @@ body {
     /* background-color: rgb(27, 27, 41); */
 }
 
+body header h1 {
+    margin: 50px 50px 0px 50px;
+}
+
+body header h2 {
+    margin: 0px 50px 0px 50px;
+}
+
 #banner {
     margin: auto;
     display: flex;
@@ -25,33 +33,163 @@ body {
     margin-left: 5px;
     margin-right: 15px;
     border-radius: 15px;
-    transition: all 300ms;
-    transition-timing-function: cubic-bezier(0.060, 0.655, 0.555, 0.475);
+    /* transition: all 300ms;
+    transition-timing-function: cubic-bezier(0.060, 0.655, 0.555, 0.475); */
 }
 
 .stripe1 {
     animation-name: waves1;
     animation-duration: infinite;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-duration: 3s;
 }
 
 @keyframes waves1 {
     0% {
-        height: 20px;
+        height: 25px;
+        background-color: blue;
     }
     25% {
-        height: 40px;
+        height: 50px;
+        background-color: aqua;
     }
     50% {
-        height: 60px;
+        height: 75px;
+        background-color: aquamarine;
     }
     75% {
-        height: 80px;
+        height: 100px;
+        background-color:paleturquoise;
+    }
+    100% {
+        height: 125px;
+        background-color: mediumturquoise;
+    }
+}
+
+.stripe2 {
+    animation-name: waves2;
+    animation-duration: infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+@keyframes waves2 {
+    0% {
+        height: 50px;
+        background-color: mediumturquoise;
+    }
+    25% {
+        height: 75px;
+        background-color: blue;
+    }
+    50% {
+        height: 100px;
+        background-color: aqua;
+    }
+    75% {
+        height: 125px;
+        background-color: aquamarine;
+    }
+    100% {
+        height: 25px;
+        background-color:paleturquoise;
+    }
+}
+
+.stripe3 {
+    animation-name: waves3;
+    animation-duration: infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+@keyframes waves3 {
+    0% {
+        height: 75px;
+        background-color:paleturquoise;
+    }
+    25% {
+        height: 100px;
+        background-color: mediumturquoise;
+    }
+    50% {
+        height: 125px;
+        background-color: blue;
+    }
+    75% {
+        height: 25px;
+        background-color: aqua;
+    }
+    100% {
+        height: 50px;
+        background-color: aquamarine;
+    }
+}
+
+.stripe4 {
+    animation-name: waves4;
+    animation-duration: infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+@keyframes waves4 {
+    0% {
+        height: 100px;
+        background-color: aquamarine;
+    }
+    25% {
+        height: 125px;
+        background-color:paleturquoise;
+    }
+    50% {
+        height: 25px;
+        background-color: mediumturquoise;
+    }
+    75% {
+        height: 50px;
+        background-color: blue;
+    }
+    100% {
+        height: 75px;
+        background-color: aqua;
+    }
+}
+
+.stripe5 {
+    animation-name: waves5;
+    animation-duration: infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+@keyframes waves5 {
+    0% {
+        height: 125px;
+        background-color: aqua;
+    }
+    25% {
+        height: 25px;
+        background-color: aquamarine;
+    }
+    50% {
+        height: 50px;
+        background-color:paleturquoise;
+    }
+    75% {
+        height: 75px;
+        background-color: mediumturquoise;
     }
     100% {
         height: 100px;
+        background-color: blue;
     }
 }
 
@@ -72,4 +210,49 @@ main section {
 
 main section ul {
     list-style-type: none;
+}
+
+main section h2 {
+    background-color: purple;
+    /* padding: 10px 20px 10px 20px;
+    margin: 20px 40px 20px 40px; */
+    border-radius: 10px;
+    transition: all 300ms;
+    transition-timing-function: cubic-bezier(0.060, 0.655, 0.555, 0.475)
+}
+
+main section h2:hover {
+    background-color: blue;
+
+}
+
+main section div {
+    height: 48px;
+    width: 80%;
+    background-color: cadetblue;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+main section div h2 {
+    background-color: purple;
+    height: 48px;
+    width: 100px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+main section div:hover h2 {
+    background-color: blue;
+    animation: slider 3s ease-in-out alternate;
+
+}
+@keyframes slider {
+    from {
+        left: 0;
+    }
+    to {
+        right:0;
+    }
 }
