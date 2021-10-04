@@ -381,11 +381,11 @@ main section ul li a p {
     margin: 5px 0px 5px 0px;
     width: 80%;
     border-radius: 10px;
-    border: 2px solid;
-    border-top-color: rgb(62, 62, 62);
-    border-left-color: rgb(48, 48, 48);
-    border-bottom-color: rgb(38, 38, 38);
-    border-right-color: rgb(55, 55, 55);
+    border: 10px solid;
+    border-top-color: rgb(48, 48, 48);
+    border-left-color: rgb(33, 33, 33);
+    border-bottom-color: rgb(23, 23, 23);
+    border-right-color: rgb(40, 40, 40);
 }
 
 main section:hover ul li a p{
@@ -399,10 +399,20 @@ main section:hover ul li a p{
 footer {
     display: flex;
     justify-content: center;
+    margin: 20px 20px 40px 20px;
+    background-color:rgb(28, 28, 28);
+    border-radius: 10px;
+    border: 10px solid;
+    border-top-color: rgb(48, 48, 48);
+    border-left-color: rgb(33, 33, 33);
+    border-bottom-color: rgb(23, 23, 23);
+    border-right-color: rgb(40, 40, 40);
 }
 
 footer a {
     color: #fff;
-    margin: 20px;
+    margin: 30px 30px 30px 30px;
     text-decoration: none;
+    font-family: ovepass, sans-serif;
+    text-transform: uppercase;
 }
