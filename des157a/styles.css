@@ -381,11 +381,12 @@ main section ul li a p {
     margin: 5px 0px 5px 0px;
     width: 80%;
     border-radius: 10px;
-    border: 10px solid;
-    border-top-color: rgb(48, 48, 48);
-    border-left-color: rgb(33, 33, 33);
-    border-bottom-color: rgb(23, 23, 23);
-    border-right-color: rgb(40, 40, 40);
+    border: 2px solid;
+    border-top-color: rgb(62, 62, 62);
+    border-left-color: rgb(48, 48, 48);
+    border-bottom-color: rgb(38, 38, 38);
+    border-right-color: rgb(55, 55, 55);
+
 }
 
 main section:hover ul li a p{
