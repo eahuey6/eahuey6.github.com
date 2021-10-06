@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Experimentations: Experiment 1</title>
+</head>
+
+<body>
+    <h1>JavaScript Experimentations: Experiment 1</h1>
+
+    <h2>open console to see results</h2>
+
+    <h2>Experiment 1A:</h2>
+    <p>Write a program that uses console.log to print all the numbers from 1 to 100, with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.</p>
+
+    <h2>Experiment 1B:</h2>
+    <p>Write a loop that makes seven calls to console.log to output the following triangle:</p>
+    <p>#</p>
+    <p>##</p>
+    <p>###</p>
+    <p>####</p>
+    <p>#####</p>
+    <p>######</p>
+    <p>#######</p>
+
+    <script>
+        console.log("EXPERIMENT 1A");
+
+        // this code sets the variables to 0 initially
+        var remainder3 = 0;
+        var remainder5 = 0;
+
+        // for loop that prints and checks the numbers
+        for (var i = 1; i < 101; i++) {
+
+            // calculates the remainder when the number is divided by 3 or 5
+            remainder3 = (i % 3);
+            remainder5 = (i % 5);
+
+            // checks if number is divisible by 3 or 5 (if remainder is 0) and prints fizz if divisible by 3, buzz if divisible by 5, or the number (i) if not divisible by either
+            if (remainder3 == 0) {
+                console.log("Fizz");
+            } else if (remainder5 == 0) {
+                console.log("Buzz");
+            } else {
+                console.log(i);
+            }
+        }
+
+        console.log("EXPERIMENT 1B");
+
+        var hash = "#";
+        var hashString = "";
+        for (var j = "0"; j < 7; j++) {
+            hashString = (hashString + hash);
+            console.log(hashString);
+        }
+    </script>
+
+</body>
+
+</html>
