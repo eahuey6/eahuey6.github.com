@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Experimentations: Experiment 2</title>
+</head>
+
+<body>
+    <h1>JavaScript Experimentations: Experiment 2</h1>
+
+    <div>
+        <p>Using prompt() ask users to input their favorite color from a list of colors. Then change the background color of the text to that color.</p>
+    </div>
+
+
+    <script>
+        var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+        var userColor = prompt(`Choose one of these colors: ${colors}`, "");
+
+
+        function checkInput(userInput) {
+            if (userInput == "red" || userInput == "orange" || userInput == "yellow" || userInput == "green" || userInput == "blue" || userInput == "purple") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function compareColor(color) {
+            var myTag = document.createElement('p');
+
+            if (checkInput(color) == false) {
+                var errorText = document.createTextNode('ERROR: You did not choose a color from the list.');
+                myTag.appendChild(errorText);
+                document.querySelector('div').appendChild(myTag);
+                myTag.style.color = "red";
+                return;
+            } else {
+                var colorText = document.createTextNode(`You chose: ${color}`);
+                myTag.appendChild(colorText);
+                document.querySelector('div').appendChild(myTag);
+
+                myTag.style.backgroundColor = color
+
+            }
+        }
+
+        compareColor(userColor);
+    </script>
+
+</body>
+
+</html>
