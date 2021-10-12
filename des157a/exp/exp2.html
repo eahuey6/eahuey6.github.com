@@ -12,15 +12,18 @@
     <h1>JavaScript Experimentations: Experiment 2</h1>
 
     <div>
-        <p>Using prompt() ask users to input their favorite color from a list of colors. Then change the background color of the text to that color.</p>
+        <p>Using prompt() ask users to input their favorite color from a list of colors. Then change the background color of the page to that color.</p>
     </div>
 
 
     <script>
+        // the following code prompts the user to choose a color from the rainbow and changes the color of the background color to the color the user chooses
+
+        // sets up variables (colors) and prompts uer
         var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
         var userColor = prompt(`Choose one of these colors: ${colors}`, "");
 
-
+        // checks to see if user typed in one of the colors from the list
         function checkInput(userInput) {
             if (userInput == "red" || userInput == "orange" || userInput == "yellow" || userInput == "green" || userInput == "blue" || userInput == "purple") {
                 return true;
@@ -29,6 +32,7 @@
             }
         }
 
+        // creates results from what the user chose, basically if the user did not choose a color from the list, an error message is printed, otherwise the background color of the page is changed to whatever color the user chose and a statement is printed stating the color
         function compareColor(color) {
             var myTag = document.createElement('p');
 
@@ -39,16 +43,23 @@
                 myTag.style.color = "red";
                 return;
             } else {
-                var colorText = document.createTextNode(`You chose: ${color}`);
+                var colorText = document.createTextNode(`You chose: ${color}!`);
                 myTag.appendChild(colorText);
                 document.querySelector('div').appendChild(myTag);
 
-                myTag.style.backgroundColor = color
+                // myTag.style.backgroundColor = color;
+                myTag.style.fontSize = "24px";
+                myTag.style.fontWeight = "bold";
+                document.body.style.backgroundColor = color;
+
+                return
 
             }
         }
 
+        // function put into action using the user input
         compareColor(userColor);
+
     </script>
 
 </body>
