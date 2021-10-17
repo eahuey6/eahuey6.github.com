@@ -1,0 +1,161 @@
+body {
+    max-width: 1366px;
+    min-width: 900px;
+    background-color: rgb(250, 250, 250);
+}
+body main {
+    margin: auto;
+    max-width: 550px;
+    
+}
+
+/* header code */
+body header {
+    display: flex;
+    padding-top: 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+    max-width: 1366px;
+
+    border-bottom:1px solid rgb(240, 240, 240);
+    padding-bottom: 15px;
+    background-color: white;
+}
+body header h1 {
+    margin: 0px 50px 0px 50px;
+
+    color: rgb(33, 33, 33);
+
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.5px;
+
+}
+
+body header h2 {
+    margin: 0px 50px 0px 50px;
+    padding-top: 10px;
+    position: absolute;
+    top: 10;
+    right: 0;
+
+    color: rgb(33, 33, 33);;
+
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+
+/* Code for article overall and header */
+
+body main article {
+    margin: 90px 0px 40px 0px;
+}
+
+.aHeader {
+    display: block;
+    position: relative;
+    margin: 60px 0px 100px 0px;
+}
+
+.chapH2 {
+    display: flex;
+    margin-left: 40px;
+}
+
+.chapH2 h2 {
+    font-family: 'Playfair Display', serif;
+    color: rgb(33, 33, 33);
+}
+
+.chapter {
+    padding-right: 20px;
+
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 187px;
+    letter-spacing: 2px;
+}
+.chapNum {
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 5px;
+}
+
+.aHeader h3 {
+    margin-left: 40px;
+
+    position: absolute;
+    top: 9.3em;
+
+    text-transform: uppercase;  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+
+}
+
+#aDate1 {
+    padding-top: 20px;
+
+    position: absolute;
+    top: 15.3em;
+    left: 0;
+
+    transform: rotate(-90deg);
+    transform-origin: left;
+
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color:rgb(84, 84, 84);
+}
+
+
+
+/* code for article body */
+
+.aText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+}
+
+.aText p{
+    margin-bottom: 35px;
+}
+
+.aText p a {
+    text-decoration: none;
+    color: rgb(53, 89, 167);
+}
+
+/* code for the footer */
+footer {
+    margin: 100px 0px 60px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 0px 30px 0px 30px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color:rgb(62, 62, 62);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
