@@ -106,7 +106,7 @@ body main article {
 
 }
 
-.aDate {
+#aDate1 {
     padding-top: 20px;
 
     position: absolute;
@@ -122,6 +122,21 @@ body main article {
     color:rgb(84, 84, 84);
 }
 
+#aDate2 {
+    padding-top: 20px;
+
+    position: absolute;
+    top: 15.3em;
+    left: 0;
+
+    transform: rotate(-90deg);
+    transform-origin: left;
+
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color:rgb(84, 84, 84);
+}
 
 
 /* code for article body */
