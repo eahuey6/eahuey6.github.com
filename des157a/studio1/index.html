@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Build a Table</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>How to build a table</h1>
+            <section>
+                <img src="images/table_parts.png" alt="table parts" width="534px" height="366px">
+            </section>
+        </header>
+
+
+        <section id="formSection">
+            <h2>Please fill in the following...</h2>
+
+            <form id="myform">
+                <label for="aTime" class="labels">A length of time</label>
+                <input type="text" id="aTime" required>
+
+                <label for="adj" class="labels">An adjective</label>
+                <input type="text" id="adj" required>
+
+                <label for="aNum" class="labels">A number</label>
+                <input type="text" id="aNum" required>
+
+                <label for="color" class="labels">A color</label>
+                <input type="text" id="color" required>
+
+                <label for="direction" class="labels">A direction</label>
+                <input type="text" id="direction" required>
+
+                <label for="tool" class="labels">A tool</label>
+                <input type="text" id="tool" required>
+
+                <label for="item" class="labels">An item</label>
+                <input type="text" id="item" required>
+
+                <fieldset>
+                    <legend>Choose a decoration</legend>
+                    <input type="radio" name="decoration" id="flowers" value="flowers">
+                    <label class="decorClass" for="flowers">Flowers</label>
+                    <span for="flowers" class="checkmark"></span>
+
+                    <input type="radio" name="decoration" id="candles" value="candles">
+                    <label class="decorClass" for="candles">Candles</label>
+                    <span for="candles" class="checkmark"></span>
+
+                    <input type="radio" name="decoration" id="books" value="books">
+                    <label class="decorClass" for="books">Books</label>
+                    <span for="books" class="checkmark"></span>
+                </fieldset>
+                <!-- <label for="decor" class="labels">A decoration</label>
+                <input type="text" id="decor" required> -->
+
+                <input id="submitBtn" type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+
+    <section id="overlay" class="hidden">
+        <section>
+            <p id="backBtn">back</p>
+            <h1>How to build a table</h1>
+            <img id="tableDecor" src="images/table_flowers.png" alt="finished table" width="534px" height="400px">
+        </section>
+        <article>
+            <p>Estimated time to build the table: <b id="aTimeBlank">${time}</b></p>
+            <p>
+                <b class="headers">Materials Needed:</b><br> 1 square piece of <b id="adjBlank">${adj}</b> wood <br> 4 table legs <br>
+                <b id="aNumBlank">${aNum}</b> nails <br>
+                <b id="colorBlank1">${color}</b> paint <br> 
+                <b id="decorBlank1">${decor}</b> 
+            </p>
+            <p>
+                <b class="headers">Instructions:</b><br> 1. Put the square piece of wood <b id="directionBlank">${direction}</b> on the ground <br> 2. Nail each leg to the corners of the square wood using a <b id="toolBlank">${tool}</b> <br> 3. Sand the table
+                with a piece of <b id="itemBlank">${item}</b> <br> 4. Paint the table with your <b id="colorBlank2">${color}</b> paint <br> 5. Decorate your table with the <b id="decorBlank2">{decor}</b>
+
+                </p>
+                
+                <p id="congrats">Congratulations, your table is done!</p>
+            </article>
+        </section>
+
+
+    <footer>
+        <a href="mailto:&#101;&#097;&#104;&#117;&#101;&#121;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email Me</a>
+        <a href="https://validator.w3.org/check?uri=https://eahuey6.github.io/des157a/studio1">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Feahuey6.github.io%2Fdes157a%2Flj%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a>
+    </footer>
+
+
+
+
+</body>
+
+</html>
