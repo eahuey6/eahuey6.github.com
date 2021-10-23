@@ -32,14 +32,17 @@
         // replaces image on overlay with what decoration user chose
         if (chosenDecor == "flowers"){
             document.getElementById("tableDecor").src = "images/table_flowers.png";
+            document.getElementById("tableDecor").height = "446";
             decor = "flowers"
             
         } else if (chosenDecor == "candles") {
             document.getElementById("tableDecor").src = "images/table_candles.png";
+            document.getElementById("tableDecor").height = "373";
             decor = "candles";
 
         } else if (chosenDecor == "books") {
             document.getElementById("tableDecor").src = "images/table_books.png";
+            document.getElementById("tableDecor").height = "314";
             decor = "books";
         }
 
