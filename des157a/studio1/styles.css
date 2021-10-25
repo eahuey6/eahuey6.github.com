@@ -59,6 +59,7 @@ input[type="text"] {
     width: 300px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    font-weight: 500;
     color: rgb(49, 49, 49)
 }
 
