@@ -11,14 +11,12 @@ main {
     align-items: center;
 }
 
-
 h1 {
     margin-top: 50px;
     font-family: 'Bebas Neue', cursive;
     font-size: 70px;
     font-weight: 500;
 }
-
 
 h2 {
     font-family: 'Bebas Neue', cursive;
@@ -36,6 +34,7 @@ h2 {
 
 
 /* stying the form */
+
 .labels {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -75,7 +74,9 @@ input[type="text"]select {
     border: 0px;
 }
 
+
 /* Styling the fieldset radios */
+
 fieldset {
     border: none;
     padding: 0;
@@ -90,23 +91,18 @@ fieldset legend {
 fieldset label {
     margin-right: 20px;
     padding: 10px 20px;
-
     background-color: #f7f7f7;
-
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 500;
-
     border: 1px solid #D8D8D8;
     border-radius: 8px;
-
 }
 
 fieldset label:hover {
     background-color: #c4c4c4;
     cursor: pointer;
 }
-
 
 fieldset input,
 fieldset label {
@@ -119,14 +115,14 @@ input[type="radio"] {
     width: 0;
 }
 
-fieldset input[type="radio"]:checked + label {
+fieldset input[type="radio"]:checked+label {
     background-color: #c4c4c4;
-
     border-color: #a0a0a0;
 }
 
 
 /* styling the submit button */
+
 input[type="submit"] {
     margin: auto;
     margin-top: 40px;
@@ -136,26 +132,23 @@ input[type="submit"] {
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
     font-size: 26px;
-    letter-spacing:1px;
-
+    letter-spacing: 1px;
     border: 0px;
     border-radius: 10px;
 }
 
 input[type="submit"]:hover {
     cursor: pointer;
-
     background-color: #55699c;
 }
 
 
-
 /* styling footer */
+
 footer {
     display: flex;
     justify-content: center;
     margin: 0px 20px 20px 20px;
-
 }
 
 footer a {
@@ -168,15 +161,15 @@ footer a {
     text-transform: uppercase;
 }
 
-/* overlay styling */
-#overlay {
-    max-width: 1366px;
-    min-width: 900px;
 
+/* overlay styling */
+
+#overlay {
+    /* max-width: 1366px;
+    min-width: 900px; */
     position: absolute;
     justify-content: space-around;
     align-items: center;
-
     background-color: #ededed;
     top: 0;
     left: 0;
@@ -199,13 +192,11 @@ footer a {
     box-shadow: 4px 4px 6px 0px rgba(50, 50, 50, 0.25);
 }
 
-
 article p {
     margin: auto;
     margin-bottom: 30px;
     margin-top: 20px;
     width: 400px;
-
     line-height: 28px;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -232,8 +223,7 @@ article p {
     font-family: 'Bebas Neue', cursive;
     font-weight: 100;
     font-size: 20px;
-    letter-spacing:1px;
-
+    letter-spacing: 1px;
     border-radius: 8px;
 }
 
