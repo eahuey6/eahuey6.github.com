@@ -51,11 +51,15 @@ input {
 }
 
 input[type="text"] {
+    padding-left: 10px;
     border: 1px solid #D8D8D8;
     background-color: #F2F2F2;
     border-radius: 10px;
     height: 30px;
     width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: rgb(49, 49, 49)
 }
 
 #aTime {
