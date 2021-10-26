@@ -138,6 +138,29 @@ body main article {
     color:rgb(84, 84, 84);
 }
 
+#aDate3 {
+    padding-top: 20px;
+
+    position: absolute;
+    top: 15.3em;
+    left: 0;
+
+    transform: rotate(-90deg);
+    transform-origin: left;
+
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color:rgb(84, 84, 84);
+}
+
+#aHeader3{
+    margin-bottom: 130px;
+}
+
+#title3{
+    top: 10em;
+}
 
 /* code for article body */
 
@@ -173,4 +196,10 @@ footer a {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
+}
+
+#portfolioImg {
+    padding-left: 10px;
+    max-width: 500px;
+    max-height: 253.5px;
 }
