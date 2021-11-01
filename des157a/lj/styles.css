@@ -154,6 +154,22 @@ body main article {
     color:rgb(84, 84, 84);
 }
 
+#aDate4 {
+    padding-top: 20px;
+
+    position: absolute;
+    top: 15.7em;
+    left: 0;
+
+    transform: rotate(-90deg);
+    transform-origin: left;
+
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color:rgb(84, 84, 84);
+}
+
 #aHeader3{
     margin-bottom: 130px;
 }
@@ -161,6 +177,10 @@ body main article {
 #title3{
     top: 10em;
 }
+#title4{
+    top: 10em;
+}
+
 
 /* code for article body */
 
@@ -202,4 +222,20 @@ footer a {
     padding-left: 10px;
     max-width: 500px;
     max-height: 253.5px;
+}
+
+article section figure {
+    margin: 0px;
+    padding-top: 15px;
+}
+
+article section figure img{
+    max-width: 545px;
+}
+
+article section figure figcaption {
+    color:rgb(84, 84, 84);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: italic;
 }
