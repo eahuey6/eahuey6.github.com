@@ -1,0 +1,49 @@
+/* 1366 x 768 */
+
+
+/* font-family: 'Anton', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+/* styling header */
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 160px;
+}
+
+header img {
+    height: 133px;
+    width: 181px;
+}
+
+
+/* styling the nav bar */
+
+header nav {
+    width: 95%;
+    margin: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    margin: 90px 25px 0px 45px;
+    display: block;
+    color: #1F508A;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
