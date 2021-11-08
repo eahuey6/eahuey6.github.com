@@ -12,10 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
 
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
@@ -34,7 +36,7 @@
     <main>
 
         <div id="container">
-            <img src="images/picketOutlined.jpg" id="picketImg" class="start" width="1366">
+            <img src="images/picketOutlined.jpg" id="picketImg" class="start" width="1366" alt="picket image">
             <div id="canopy"></div>
             <div id="unpaidWork"></div>
             <div id="table"></div>
@@ -43,14 +45,57 @@
         </div>
 
         <p id="fightingText">What We're Fighting For...</p>
+        <p id="instructions">click on the outlined items</p>
 
     </main>
 
 
 
+
+
+    <section id="canopyOverlay" class="hidden">
+        <article>
+            <h2>The uc works because we do</h2>
+            <p>This banner is signed by many UC lecturers and supporters of the UC-AFT and their bargaining campaign. Among other issues, the lecturers are also fighting for fair compensation that reflects the training, experience, and contributions to the university and that keeps up with the rising cost of living in California. </p>
+            <button class="close" id="canopyBackBtn">X</button>
+        </article>
+    </section>
+
+    <section id="unpaidWorkOverlay" class="hidden">
+        <article>
+            <h2>End unpaid work now!</h2>
+            <p>Every lecturer deserves <b>reasonable workload standards</b> that eliminate uncompensated workload and address lecturers' unpaid service and professional development. Currently, many lecturers do uncompensated service and outside work for their university or department. The UC-AFT is currently fighting for better regulation of the lecturers workload and better workload standards.</p>
+            <button class="close" id="unpaidWorkBackBtn">X</button>
+        </article>
+    </section>
+
+    <section id="tableOverlay" class="hidden">
+        <article>
+            <h2>faculty equity, student success</h2>
+            <p>At the informational picket, students and other onlookers could approach this table to learn more about the bargaining campaign and sign their name on a list to demonstrate support. The lecturers currently have had support from a number of state legislators as well as the student body governments of a number of the UCs. </p>
+            <button class="close" id="tableBackBtn">X</button>
+        </article>
+    </section>
+
+    <section id="milkOverlay" class="hidden">
+        <article>
+            <h2>Missing: President Drake</h2>
+            <p>The lecturers have been out of contract since before the pandemic started and the UC-AFT and UCOP (University of California Office of the President) have been bargaining for a contract ever since. The UC-AFT is the union representing the lecturers in the negotiations.</p>
+            <button class="close" id="milkBackBtn">X</button>
+        </article>
+    </section>
+
+    <section id="jobSecurityOverlay" class="hidden">
+        <article>
+            <h2>UC-AFT faculty demand job security</h2>
+            <p>Every lecturer deserves a <b>transparent, consistent appointment process</b> that bring job stability through rehiring preferences, unbiased evaluations, multi-year appointments for pre-six lecturers, and accessible pathways to promotion to Senior Lecturer for continuing lecturers. Many lecturers face job instability and live on a quarter to quarter basis. The UC-AFT is fighting for a more consistent review process that will bring better job stability to the lecturers.</p>
+            <button class="close" id="jobSecurityBackBtn">X</button>
+        </article>
+    </section>
+
     <footer>
-        <a href="https://validator.w3.org/check?uri=https://eahuey6.github.io/des157a/studio1">Valid HTML 5</a>
-        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Feahuey6.github.io%2Fdes157a%2Fstudio1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a>
+        <a href="https://validator.w3.org/check?uri=https://eahuey6.github.io/des157a/studio2">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Feahuey6.github.io%2Fdes157a%2Fstudio2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a>
     </footer>
 
 

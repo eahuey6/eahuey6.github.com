@@ -77,6 +77,18 @@ header nav ul li a {
     letter-spacing: 2px;
 }
 
+#instructions {
+    position: absolute;
+    color: #F2F2F2;
+    top: 190px;
+    left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 #container img {
     position: absolute;
     display: block;
@@ -92,7 +104,10 @@ header nav ul li a {
     height: 173px;
     top: 390px;
     left: 55px;
-    border: 2px solid rgb(255, 255, 255);
+}
+
+#canopy:hover {
+    cursor: pointer;
 }
 
 #table {
@@ -100,7 +115,11 @@ header nav ul li a {
     height: 120px;
     top: 523px;
     left: 330px;
-    border: 2px solid rgb(255, 255, 255);
+
+}
+
+#table:hover {
+    cursor: pointer;
 }
 
 #milk {
@@ -108,7 +127,11 @@ header nav ul li a {
     height: 215px;
     top: 356px;
     left: 725px;
-    border: 2px solid rgb(255, 255, 255);
+
+}
+
+#milk:hover {
+    cursor: pointer;
 }
 
 #unpaidWork {
@@ -116,7 +139,10 @@ header nav ul li a {
     height: 260px;
     top: 343px;
     left: 850px;
-    border: 2px solid rgb(255, 255, 255);
+}
+
+#unpaidWork:hover {
+    cursor: pointer;
 }
 
 #jobSecurity {
@@ -124,7 +150,15 @@ header nav ul li a {
     height: 350px;
     top: 305px;
     left: 1170px;
-    border: 2px solid rgb(255, 255, 255);
+}
+
+#jobSecurity:hover {
+    cursor: pointer;
+}
+
+.start {
+    left: 0;
+    top: 0;
 }
 
 .canopy,
@@ -132,12 +166,181 @@ header nav ul li a {
 .table,
 .milk,
 .jobSecurity {
-    width: 3000px;
+    width: 3786px;
 }
 
 .canopy {
-    top: -600px;
-    left: -50px;
+    top: -850px;
+    left: -100px;
+}
+
+.unpaidWork {
+    top: -750px;
+    left: -2100px;
+}
+
+.table {
+    top: -1150px;
+    left: -900px;
+}
+
+.milk {
+    top: -750px;
+    left: -1200px;
+}
+
+.jobSecurity {
+    top: -650px;
+    left: -2400px;
+}
+
+/* Styling overlay captions */
+
+body section article h2 {
+    padding: 0px 10px 0px 10px;
+    color: #A83921;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+body section article p {
+    padding: 0px 10px 0px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: rgba(244, 244, 244, 0.95);
+    background-color: #A83921;
+    width: 40px; 
+    height: 40px;
+    border: 0px;
+    border-radius: 40px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 40px;
+}
+
+.close:hover {
+    background-color: #722716;
+    cursor: pointer;
+}
+
+#canopyOverlay {
+    position: absolute;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+
+#canopyOverlay article {
+    box-sizing: border-box;
+    background-color: rgba(249, 249, 249, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 460px;
+    left: 1000px;
+    transform: translate(-50%, -50%);
+}
+
+
+
+#unpaidWorkOverlay {
+    position: absolute;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#unpaidWorkOverlay article {
+    box-sizing: border-box;
+    background-color: rgba(249, 249, 249, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 460px;
+    left: 850px;
+    transform: translate(-50%, -50%);
+}
+
+
+#tableOverlay {
+    position: absolute;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#tableOverlay article {
+    box-sizing: border-box;
+    background-color: rgba(249, 249, 249, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    height: 470px;
+    position: absolute;
+    top: 440px;
+    left: 1050px;
+    transform: translate(-50%, -50%);
+}
+
+#milkOverlay {
+    position: absolute;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#milkOverlay article {
+    box-sizing: border-box;
+    background-color: rgba(249, 249, 249, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    width: 575px;
+    height: 340px;
+    position: absolute;
+    top: 460px;
+    left: 450px;
+    transform: translate(-50%, -50%);
+}
+
+#jobSecurityOverlay {
+    position: absolute;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#jobSecurityOverlay article {
+    box-sizing: border-box;
+    background-color: rgba(249, 249, 249, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    width: 675px;
+    height: 420px;
+    position: absolute;
+    top: 460px;
+    left: 490px;
+    transform: translate(-50%, -50%);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
 }
 
 
