@@ -115,7 +115,6 @@ header nav ul li a {
     height: 120px;
     top: 523px;
     left: 330px;
-
 }
 
 #table:hover {
@@ -127,7 +126,6 @@ header nav ul li a {
     height: 215px;
     top: 356px;
     left: 725px;
-
 }
 
 #milk:hover {
@@ -194,6 +192,7 @@ header nav ul li a {
     left: -2400px;
 }
 
+
 /* Styling overlay captions */
 
 body section article h2 {
@@ -216,7 +215,7 @@ body section article p {
     right: 20px;
     color: rgba(244, 244, 244, 0.95);
     background-color: #A83921;
-    width: 40px; 
+    width: 40px;
     height: 40px;
     border: 0px;
     border-radius: 40px;
@@ -236,7 +235,6 @@ body section article p {
     transition-timing-function: ease;
 }
 
-
 #canopyOverlay article {
     box-sizing: border-box;
     background-color: rgba(249, 249, 249, 0.7);
@@ -249,8 +247,6 @@ body section article p {
     left: 1000px;
     transform: translate(-50%, -50%);
 }
-
-
 
 #unpaidWorkOverlay {
     position: absolute;
@@ -271,7 +267,6 @@ body section article p {
     left: 850px;
     transform: translate(-50%, -50%);
 }
-
 
 #tableOverlay {
     position: absolute;
@@ -348,7 +343,7 @@ body section article p {
 
 footer {
     position: absolute;
-    top: 750px;
+    top: 730px;
     left: 10px;
     display: flex;
     justify-content: center;
