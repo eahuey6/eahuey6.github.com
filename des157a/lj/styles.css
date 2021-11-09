@@ -170,6 +170,22 @@ body main article {
     color:rgb(84, 84, 84);
 }
 
+#aDate5 {
+    padding-top: 20px;
+
+    position: absolute;
+    top: 16em;
+    left: 0;
+
+    transform: rotate(-90deg);
+    transform-origin: left;
+
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color:rgb(84, 84, 84);
+}
+
 #aHeader3{
     margin-bottom: 130px;
 }
@@ -178,6 +194,10 @@ body main article {
     top: 10em;
 }
 #title4{
+    top: 10em;
+}
+
+#title5{
     top: 10em;
 }
 
