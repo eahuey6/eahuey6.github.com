@@ -58,20 +58,26 @@ div {
 
 #infoOverlay {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     transition-property: opacity, visibility;
     transition-duration: 1s;
     transition-timing-function: ease;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 #infoOverlay article {
-    background-color: rgba(249, 249, 249);
+    box-sizing: border-box;
+    background-color: #DCD9D5;
     border-radius: 20px;
     padding: 60px;
     width: 675px;
-    height: 280px;
+    height: 450px;
     position: absolute;
-    top: -25vw;
-    left: 45vw;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
