@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game of Pig</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>The Game of Pig</h1>
+
+    <button id="infoBtn">?</button>
+
+    <!-- <div id="gamecontrol">
+        <h2>Start a Game</h2>
+    </div> -->
+
+
+    <section id="gameplay">
+        <section id="p1">
+            <h2>Player 1</h2>
+            <section>
+                <p id="currScoreText1">Score:</p>
+                <p id="score1"></p>
+                <div id="buttons1"></div>
+            </section>
+        </section>
+
+        <div id="middle">
+            <div id="dice"></div>
+            <!-- <div id="game"></div> -->
+            <p id="actionText"></p>
+            <button id="quitBtn" class="hidden">QUIT GAME</button>
+            <button id="startgame" class="showing">Randomly Pick the First Player, and Start the Game</button>
+        </div>
+
+        <section id="p2">
+            <h2>Player 2</h2>
+            <section>
+                <p id="currScoreText2">Score:</p>
+                <p id="score2"></p>
+                <div id="buttons2"></div>
+            </section>
+        </section>
+        
+    </section>
+
+    <section id="infoOverlay" class="hidden">
+        <article>
+            <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn.
+                After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p>
+            <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+            <button class="close" id="backBtn">X</button>
+        </article>
+    </section>
+
+    <footer>
+        <a href="sources.html">Sources</a>
+        <a href="https://validator.w3.org/check?uri=https://eahuey6.github.io/des157a/studio3">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Feahuey6.github.io%2Fdes157a%2Fstudio2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a>
+    </footer>
+
+</body>
+
+</html>
