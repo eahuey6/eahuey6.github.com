@@ -7,6 +7,8 @@
     const actionText = document.getElementById('actionText');
     const quitBtn = document.getElementById('quitBtn');
 
+    const p1Section = document.getElementById('p1Section');
+    const p2Section = document.getElementById('p2Section');
     const score1 = document.getElementById('score1');
     const score2 = document.getElementById('score2');
     const buttons1 = document.getElementById('buttons1');
@@ -55,11 +57,16 @@
 
         // sets up buttons depending on whose turn it is
         if (gameData.index === 0) {
+            p1Section.style.backgroundColor = "#F4F4F4";
+            p2Section.style.backgroundColor = "#CFCCC8";
             buttons1.innerHTML = '<button id="roll">Roll</button>';
+
             document.getElementById('roll').addEventListener('click', function() {
                 throwDice();
             });
         } else if (gameData.index === 1) {
+            p1Section.style.backgroundColor = "#CFCCC8";
+            p2Section.style.backgroundColor = "#F4F4F4";
             buttons2.innerHTML = '<button id="roll">Roll</button>';
             document.getElementById('roll').addEventListener('click', function() {
                 throwDice();

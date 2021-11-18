@@ -221,7 +221,8 @@ div {
 
 #p1 section {
     display: block;
-    background-color: #F4F4F4;
+    background-color: #CFCCC8;
+    /* background-color: #F4F4F4; */
     width: 300px;
     height: 350px;
     border-radius: 10px;
@@ -281,7 +282,7 @@ div {
 
 #p2 section {
     display: block;
-    background-color: #F4F4F4;
+    background-color: #CFCCC8;
     width: 300px;
     height: 350px;
     border-radius: 10px;
