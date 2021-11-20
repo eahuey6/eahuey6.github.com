@@ -11,18 +11,20 @@ font-family: 'Playfair Display', serif; */
 }
 
 #briefBody h1 {
+    color: rgb(36, 36, 36);
     font-family: 'Playfair Display', serif;
     font-weight: 800;
     text-transform: uppercase;
 }
 
 #briefBody h2 {
+    color: rgb(36, 36, 36);
     font-size: 28px;
     font-family: 'Playfair Display', serif;
 }
 
 #briefHeader{
-    padding: 20px 40px;
+    padding: 40px 80px;
 }
 
 #briefMain {
@@ -60,8 +62,23 @@ font-family: 'Playfair Display', serif; */
 }
 
 
+#briefFooter {
+    margin-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
 
+#briefFooter a {
+    margin: 30px;
 
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
 
 
