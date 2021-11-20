@@ -1,0 +1,79 @@
+
+/* font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+
+/* styling the design brief */
+#briefBody {
+    background-color: rgb(230, 230, 230);
+    color: rgb(36, 36, 36);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#briefBody h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#briefBody h2 {
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+}
+
+#briefHeader{
+    padding: 20px 40px;
+}
+
+#briefMain {
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+}
+
+#briefMain section {
+    padding-bottom: 40px;
+}
+
+#briefMain section p {
+    font-size: 18px;
+}
+
+#briefMain section p a {
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+}
+
+#briefMain section a {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    color:rgb(32, 32, 96);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    /* width: 500px; */
+}
+
+#briefMain section a img {
+    width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
