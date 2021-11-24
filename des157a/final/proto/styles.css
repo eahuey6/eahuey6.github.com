@@ -1,0 +1,312 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Vidaloka', serif; 
+font-family: 'Italiana', serif;*/
+
+
+/* general code */
+body {
+    background-color: #8C998D;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h2 {
+    font-family: 'Italiana', serif;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+
+/* Styling header */
+
+header {
+    height: 100px;
+}
+
+#spadeImg {
+    position: absolute;
+    top: 62px;
+    left: 60px;
+}
+
+
+h1 {
+    padding-top: 20px;
+    padding-left: 120px;
+    font-family: 'Italiana', serif;
+    text-transform: uppercase;
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+
+
+/* code for info button and overlay */
+#infoSection{
+    display: flex;
+    position: absolute;
+    top: 60px;
+    right: 70px;
+}
+
+#infoSection p {
+    margin-right: 15px;
+    font-family: 'Italiana', serif;
+    text-transform: uppercase;
+    font-size: 18px;   
+}
+
+#infoBtn {
+    margin-top: 3px;
+    color: #524A41;
+    background-color: #F4F4F4;
+    width: 45px;
+    height: 45px;
+    border: 0px;
+    border-radius: 40px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+#infoBtn:hover {
+    color: white;
+    background-color: #69776A;
+    cursor:pointer;
+}
+
+#infoOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+#infoOverlay article {
+    box-sizing: border-box;
+    background-color: #DCD9D5;
+    border-radius: 20px;
+    padding: 60px;
+    width: 675px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#infoOverlay p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+#backBtn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #F4F4F4;
+    background-color: #69776A;
+    width: 35px;
+    height: 35px;
+    border: 0px;
+    border-radius: 40px;
+    font-family: 'Italiana', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+#backBtn:hover {
+    color: white;
+    background-color: #556056;
+    cursor:pointer;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* styling main gameplay area */
+#gameplay {
+    margin-left: 150px;
+}
+
+#deck {
+    position: absolute;
+    top: 290px;
+    right: 150px;
+}
+
+#startgame {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #525252;
+    background-color: rgb(230, 230, 230);
+    text-transform: uppercase;
+}
+
+
+/* styling the dealer's section */
+#dealer{
+    padding-top: 20px;
+    display: flex;
+}
+
+#dSection h2 {
+    margin: 0;
+}
+
+#dScoreBtn {
+    margin-top: 10px;
+    padding: 20px 40px;
+    width: 220px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #525252;
+    background-color: rgb(230, 230, 230);
+    text-transform: uppercase;
+}
+
+#dScoreBtn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #69776A;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#dCards {
+    display: flex;
+}
+
+
+/* styling the player's section */
+#player{
+    padding-top: 70px;
+    display: flex;
+}
+
+#pSection h2 {
+    margin: 0;
+}
+
+#pScoreBtn {
+    margin-top: 10px;
+    padding: 20px 40px;
+    width: 220px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #525252;
+    background-color: rgb(230, 230, 230);
+    text-transform: uppercase;
+}
+#pScoreBtn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #69776A;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#pCards {
+    display: flex;
+}
+
+
+
+/* styling results overlay */
+#resultOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+#resultOverlay article {
+    box-sizing: border-box;
+    background-color: #DCD9D5;
+    border-radius: 20px;
+    padding: 60px;
+    width: 675px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#resultOverlay p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+
+
+/* styling footer */
+footer {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 30px;
+
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

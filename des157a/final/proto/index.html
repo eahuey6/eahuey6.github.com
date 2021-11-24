@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
+    <title>BlackJack</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vidaloka&display=swap" rel="stylesheet">
+    
     <link href="styles.css" rel="stylesheet">
 
     <script src="script.js" defer></script>
@@ -16,7 +20,70 @@
 </head>
 
 <body>
-    <h1>Final Project</h1>
+    <header>
+        <img id="spadeImg" src="../images/spadeIcon.png" alt="spade">
+        <h1>BlackJack</h1>
+    </header>   
+
+    <section id="infoSection">
+        <p id="howToPlay">how to play</p>
+        <button id="infoBtn">?</button>
+    </section>
+
+
+    <section id="gameplay">
+        <section id="dealer">
+            <section id="dSection">
+                <h2>Dealer:</h2>
+                <p id="dScoreBtn" class="hidden">Reveal Current Score</p>
+            </section>
+            <div id="dCards"></div>
+        </section>
+
+        <div id="middle">
+            <img id="deck" src="../images/deck.png" width="190" height="220" alt="deck of cards" >
+            <div id="cards"></div>
+            <p id="actionText"></p>
+            <button id="quitBtn" class="hidden">QUIT GAME</button>
+            <button id="startgame" class="showing">START GAME</button>
+        </div>
+
+        <section id="player">
+            <section id="pSection">
+                <h2>You:</h2>
+                <p id="pScoreBtn" class="hidden">Reveal Current Score</p>
+            </section>
+            <section>
+                <div id="pCards"></div>
+                <div id="pButtons"></div>
+            </section>
+        </section>
+        
+    </section>
+
+    <section id="resultOverlay" class="hidden">
+        <article>
+            <p id="resultText"></p>
+            <section id="resultBtns">
+                <button id="restartBtn">RESTART</button>
+                <button id="resultQuitBtn">QUIT</button>
+            </section>
+        </article>
+    </section>
+
+    <section id="infoOverlay" class="hidden">
+        <article>
+            <h2>How to Play BlackJack</h2>
+            <p>instructions</p>
+            <button class="close" id="backBtn">X</button>
+        </article>
+    </section>
+
+    <footer>
+        <a href="sources.html">Sources</a>
+        <a href="https://validator.w3.org/check?uri=https://eahuey6.github.io/des157a/final">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Feahuey6.github.io%2Fdes157a%2Fstudio3%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a>
+    </footer>
 </body>
 
 </html>
