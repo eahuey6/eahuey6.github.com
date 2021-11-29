@@ -280,4 +280,19 @@
         document.getElementById("infoOverlay").className = "hidden";
     });
 
+
+
+    // code for user testing tasks
+
+    const taskBtn = document.getElementById('taskBtn');
+    const taskBackBtn = document.getElementById('taskBackBtn');
+    taskBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        document.getElementById("taskOverlay").className = "showing";
+    });
+    taskBackBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        document.getElementById("taskOverlay").className = "hidden";
+    });
+
 }());
