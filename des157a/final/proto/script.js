@@ -77,13 +77,13 @@
 
         dealCardDealer();
 
-        dealCardPlayer();
-        dealCardPlayer();
+        setTimeout(dealCardPlayer, 1000);
+        setTimeout(dealCardPlayer, 1000);
 
         pButtons.innerHTML = '<button id="hit">HIT</button> <button id="stand">STAND</button>';
 
         document.getElementById('hit').addEventListener('click', function(){
-            dealCardPlayer();
+            setTimeout(dealCardPlayer, 1000);
         });
 
         document.getElementById('stand').addEventListener('click', function(){
@@ -161,11 +161,15 @@
             resultText.innerHTML = "BUST <br> OH NO, YOU LOST! <br> Your hand went over 21.";
             resultOverlay.className = "showing";
         } 
+        // else dealcarddealer
     }
 
     function compareScores() {
-        checkLosingCondition();
-        if (gameData.score[0] > gameData.score[1]){
+        if (gameData.score[0] > 21){
+            resultText.innerHTML = "BUST <br> CONGRATULATIONS, YOU WON! <br> The dealer's hand went over 21.";
+            resultOverlay.className = "showing";
+        }
+        else if (gameData.score[0] > gameData.score[1]){
             resultText.innerHTML = `OH NO, YOU LOST! <br> The dealer's score was ${gameData.score[0]} and your score was ${gameData.score[1]} .`;
             resultOverlay.className = "showing";
         } 
