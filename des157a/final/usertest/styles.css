@@ -4,12 +4,12 @@ font-family: 'Italiana', serif;*/
 
 
 /* general code */
+
 body {
     background-color: #8C998D;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
-
 
 h2 {
     font-family: 'Italiana', serif;
@@ -30,7 +30,6 @@ header {
     left: 60px;
 }
 
-
 h1 {
     padding-top: 20px;
     padding-left: 120px;
@@ -41,9 +40,9 @@ h1 {
 }
 
 
-
 /* code for info button and overlay */
-#infoSection{
+
+#infoSection {
     display: flex;
     position: absolute;
     top: 60px;
@@ -54,7 +53,7 @@ h1 {
     margin-right: 15px;
     font-family: 'Italiana', serif;
     text-transform: uppercase;
-    font-size: 18px;   
+    font-size: 18px;
 }
 
 #infoBtn {
@@ -65,10 +64,11 @@ h1 {
     height: 45px;
     border: 0px;
     border-radius: 40px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Italiana', serif;
     font-weight: 700;
     font-size: 30px;
 }
+
 #infoBtn:hover {
     color: white;
     background-color: #69776A;
@@ -89,7 +89,6 @@ h1 {
     transition-duration: 1s;
     transition-timing-function: ease;
     background-color: rgb(0, 0, 0, 0.5);
-    
 }
 
 #infoOverlay article {
@@ -110,9 +109,7 @@ h1 {
     line-height: 30px;
 }
 
-
-
-#backBtn{
+#backBtn {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -126,10 +123,11 @@ h1 {
     font-weight: 700;
     font-size: 20px;
 }
+
 #backBtn:hover {
     color: white;
     background-color: #556056;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .hidden {
@@ -142,7 +140,9 @@ h1 {
     opacity: 1;
 }
 
+
 /* styling main gameplay area */
+
 #gameplay {
     margin-left: 150px;
 }
@@ -193,7 +193,8 @@ h1 {
 
 
 /* styling the dealer's section */
-#dealer{
+
+#dealer {
     padding-top: 20px;
     display: flex;
 }
@@ -214,14 +215,12 @@ h1 {
     color: #525252;
     background-color: rgb(230, 230, 230);
     text-transform: uppercase;
-
     transition-property: opacity, visibility;
     transition-duration: 500ms;
     transition-timing-function: ease;
-    
 }
 
-#dScoreBtn:hover{
+#dScoreBtn:hover {
     cursor: pointer;
     color: white;
     background-color: #69776A;
@@ -236,7 +235,8 @@ h1 {
 
 
 /* styling the player's section */
-#player{
+
+#player {
     padding-top: 70px;
     display: flex;
 }
@@ -257,12 +257,12 @@ h1 {
     color: #525252;
     background-color: rgb(230, 230, 230);
     text-transform: uppercase;
-
     transition-property: opacity, visibility;
     transition-duration: 500ms;
     transition-timing-function: ease;
 }
-#pScoreBtn:hover{
+
+#pScoreBtn:hover {
     cursor: pointer;
     color: white;
     background-color: #69776A;
@@ -276,12 +276,12 @@ h1 {
 }
 
 #pButtons {
-    position:absolute;
+    position: absolute;
     top: 650px;
     left: 152px;
 }
 
-#pButtons button{
+#pButtons button {
     padding: 15px 40px;
     margin: 0 10px;
     border: 0;
@@ -290,24 +290,26 @@ h1 {
     color: #525252;
     background-color: rgb(230, 230, 230);
 }
-#pButtons button:hover{
+
+#pButtons button:hover {
     color: white;
-    background-color: #556056;  
+    background-color: #556056;
     cursor: pointer;
 }
 
 
-
 /* styling card flip */
-.card {
-    /* background-color: transparent;
-    border: 1px solid #f1f1f1; */
+
+
+/* .card {
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
     perspective: 1000px;
     width: 130px;
     height: 210px;
 }
 
-/* .cardInner {
+.cardInner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -318,7 +320,9 @@ h1 {
 .cardFlipped {
     transform: rotateY(180deg)
 }
-.cardFaceBack, .cardFaceFront {
+
+.cardFaceBack,
+.cardFaceFront {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -366,11 +370,8 @@ h1 {
 } */
 
 
-
-
-
-
 /* styling results overlay */
+
 #resultOverlay {
     position: absolute;
     top: 0;
@@ -423,9 +424,8 @@ h1 {
 }
 
 
-
-
 /* styling footer */
+
 footer {
     display: flex;
     justify-content: center;
@@ -433,22 +433,19 @@ footer {
 
 footer a {
     margin: 30px;
-
     color: white;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
-
     border-radius: 4px;
 }
 
 
-
-
 /* styling the user test stuff */
-#taskSection{
+
+#taskSection {
     display: flex;
     position: absolute;
     top: 60px;
@@ -456,7 +453,6 @@ footer a {
 }
 
 #taskBtn {
-
     padding: 25px 50px;
     border: none;
     border-radius: 8px;
@@ -467,12 +463,12 @@ footer a {
     background-color: rgb(230, 230, 230);
     text-transform: uppercase;
 }
+
 #taskBtn:hover {
     color: white;
     background-color: #69776A;
     cursor: pointer;
 }
-
 
 #taskOverlay {
     position: absolute;
@@ -484,7 +480,6 @@ footer a {
     transition-duration: 1s;
     transition-timing-function: ease;
     background-color: rgb(0, 0, 0, 0.5);
-    
 }
 
 #taskOverlay article {
@@ -505,9 +500,7 @@ footer a {
     line-height: 20px;
 }
 
-
-
-#taskBackBtn{
+#taskBackBtn {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -521,28 +514,82 @@ footer a {
     font-weight: 700;
     font-size: 20px;
 }
+
 #taskBackBtn:hover {
     color: white;
     background-color: #556056;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
+/* styling the user test results page */
 
+#userTestBody {
+    background-color: rgb(230, 230, 230);
+    color: rgb(36, 36, 36);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
 
+#userTestBody h1 {
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(36, 36, 36);
+    font-family: 'Italiana', serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
 
+#userTestBody h2 {
+    color: rgb(36, 36, 36);
+    font-size: 28px;
+    font-family: 'Italiana', serif;
+}
 
+#userTestHeader {
+    padding: 40px 80px;
+}
 
+#userTestMain {
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+}
 
+#userTestMain section {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
 
+#userTestMain section p {
+    font-size: 18px;
+}
 
+#userTestMain section div {
+    display: flex;
+    justify-content: center;
+}
 
+#userTestMain section div img {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 500px;
+}
 
+#userTestFooter {
+    margin-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
 
-
-
-
-
-
-
-
+#userTestFooter a {
+    margin: 30px;
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}

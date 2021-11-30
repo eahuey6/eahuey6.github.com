@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Testing Session and Results</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vidaloka&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body id="userTestBody">
+    <header id="userTestHeader">
+        <h1>User Testing Session and Results</h1>
+    </header>
+
+    <main id="userTestMain">
+        <section id="louis">
+            <h2>Louis</h2>
+            <div>
+                <img src="../images/louis.jpeg" alt="Louis testing the blackjack code through zoom">
+            </div>
+
+            <p>Louis noted that the movement of the footer was a bit confusing and that I could use absolute positioning to stick it to the bottom of the page. I also noticed that he was a bit confused at first when the game was being set up and that it
+                may have taken too long for the first cards to be dealt. When we talked afterward, he suggested that I could somehow indicate to the users whose turn it is and what they are supposed to do. He also noted a few pain points he had with how
+                the dealer was playing, such as only receiving one card at the beginning of the round, compared to the user receiving two cards. I also told him about the dilemma I was having with the ace card and how normally it is supposed to have a
+                value of 1 or 11, but currently I only have the value set to 1 because I couldn’t figure out how to have it hold two values. He suggested that I initially have the ace set as 11 and in my conditions and checking losing conditions, if a
+                player has an ace, the value of that card changes to 1.</p>
+            <p>Louis provided me with a lot of helpful feedback. I will definitely implement most if not all of it. I think the biggest change I will make from the feedback is the indication of whose turn it is, maybe by a color change of the background
+                color of the “dealer” and “you” header tags. From my observations I also noticed that the user may be a bit confused about how the dealer is playing. </p>
+        </section>
+
+
+        <section id="victoria">
+            <h2>Victoria</h2>
+            <div>
+                <img src="../images/victoria.jpeg" alt="Victoria testing the blackjack code through zoom">
+            </div>
+
+            <p>Victoria noted that she liked my design and color and font choices. While I was observing, I noticed that she didn’t have much difficulty completing the tasks and afterwards she told me that she completed them pretty easily and the calls to
+                action were strong. She said that for faster and easier use, I could include a restart button next to the quit button at the end of the game. Victoria also noticed that the buttons shift when the initial cards are dealt which can be a
+                bit jarring for users. She also suggested that I center align the start button. </p>
+
+            <p>Victoria gave me a lot of good feedback related to the design of my website and the user interface, specifically the buttons. I will implement pretty much all of her feedback and work on positioning some of the things more so that there isn’t
+                too much unnecessary movement based on adding and taking things off of the screen.</p>
+        </section>
+
+        <section id="das">
+            <h2>Das</h2>
+            <div>
+                <img src="../images/das.jpeg" alt="Das testing the blackjack code">
+            </div>
+            <p>At the beginning, Das took a while to read the instructions and afterwards he told me that the instructions were a bit unclear and that I could either split the line breaks up more and make the hit and pass actions more clear in the instructions.
+                I noticed that he was surprised by the first turn when the cards started appearing. I also noticed that he had to explore a lot of the page once the first turn was played in order to better understand the interface and how to play the
+                game. He noted that for the hovering score element, instead I could create a separate button that allows the scores to be hidden or shown at all times. He also said that in general, the timeout for dealing the cards may be too long and
+                that I could shorten it by half. For the dilemma I was having with the aces, he suggested that I could add buttons for the player to choose whether the ace is a one or 11. He also suggested that I could move the hit and pass buttons to
+                under the card deck and add an option where if the deck is clicked, it also is like a hit and a card is dealt to the player.</p>
+
+            <p>Das gave me a lot of good feedback. I will probably implement most of the feedback and suggestions he gave me. I will clarify the instructions with better breaks within the instructions. I will probably also implement his suggestion about
+                the score button that allows the score to be constantly hidden or shown. I also plan on shortening the timeout probably by half like Das said. </p>
+        </section>
+
+        <section id="overall">
+            <h2>Overall</h2>
+            <p>Overall, I was able to understand a lot more of the pain points during this user testing session and there are a lot of things that I want to change. From the feedback, I want to change the score button functionality and how it works. I also
+                plan on shortening the timeouts of the dealing functions to make it flow better. I also plan on working on the positioning more for the various buttons and so they don’t move unless it is intentional. I also plan on better indicating whose
+                turn it is to make it easier for the user to understand. Aside from the feedback, If I have time, I am still hoping to at least figure out some animation of my code so that the cards will flip from back to front.</p>
+        </section>
+
+
+
+        <footer id="userTestFooter">
+            <a href="mailto:&#101;&#097;&#104;&#117;&#101;&#121;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email Me</a>
+            <a href="https://validator.w3.org/check?uri=https://eahuey6.github.io/des157a/final/usertest/usertest-results.html">Valid HTML 5</a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Feahuey6.github.io%2Fdes157a%2Ffinal%2Fbrief.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a>
+        </footer>
+    </main>
+</body>
+
+</html>

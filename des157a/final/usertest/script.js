@@ -30,12 +30,11 @@
     const winSound = new Audio('../media/win.mp3');
 
 
-
     // const winSound = new Audio('media/win.mp3');
 
     // cards: ['images/cards/aheart.png', 'images/cards/2heart.png', 'images/cards/3heart.png', 'images/cards/4heart.png', 'images/cards/5heart.png', 'images/cards/6heart.png', 'images/cards/7heart.png', 'images/cards/8heart.png', 'images/cards/9heart.png', 'images/cards/10heart.png', 'images/cards/adiamond.png', 'images/cards/adiamond.png',]
     const gameData = {
-        cards: ['../images/cards/aheart.png', '../images/cards/2heart.png', '../images/cards/3heart.png', '../images/cards/4heart.png', '../images/cards/5heart.png', '../images/cards/6heart.png', '../images/cards/7heart.png', '../images/cards/8heart.png', '../images/cards/9heart.png', '../images/cards/10heart.png', '../images/cards/adiamond.png', '../images/cards/2diamond.png', '../images/cards/3diamond.png', '../images/cards/4diamond.png', '../images/cards/5diamond.png', '../images/cards/6diamond.png', '../images/cards/7diamond.png', '../images/cards/8diamond.png', '../images/cards/9diamond.png', '../images/cards/10diamond.png', '../images/cards/aspade.png', '../images/cards/2spade.png', '../images/cards/3spade.png', '../images/cards/4spade.png', '../images/cards/5spade.png', '../images/cards/6spade.png', '../images/cards/7spade.png', '../images/cards/8spade.png', '../images/cards/9spade.png', '../images/cards/10spade.png', '../images/cards/aclub.png', '../images/cards/2club.png', '../images/cards/3club.png', '../images/cards/4club.png', '../images/cards/5club.png', '../images/cards/6club.png', '../images/cards/7club.png', '../images/cards/8club.png', '../images/cards/9club.png', '../images/cards/10club.png',],
+        cards: ['../images/cards/aheart.png', '../images/cards/2heart.png', '../images/cards/3heart.png', '../images/cards/4heart.png', '../images/cards/5heart.png', '../images/cards/6heart.png', '../images/cards/7heart.png', '../images/cards/8heart.png', '../images/cards/9heart.png', '../images/cards/10heart.png', '../images/cards/adiamond.png', '../images/cards/2diamond.png', '../images/cards/3diamond.png', '../images/cards/4diamond.png', '../images/cards/5diamond.png', '../images/cards/6diamond.png', '../images/cards/7diamond.png', '../images/cards/8diamond.png', '../images/cards/9diamond.png', '../images/cards/10diamond.png', '../images/cards/aspade.png', '../images/cards/2spade.png', '../images/cards/3spade.png', '../images/cards/4spade.png', '../images/cards/5spade.png', '../images/cards/6spade.png', '../images/cards/7spade.png', '../images/cards/8spade.png', '../images/cards/9spade.png', '../images/cards/10spade.png', '../images/cards/aclub.png', '../images/cards/2club.png', '../images/cards/3club.png', '../images/cards/4club.png', '../images/cards/5club.png', '../images/cards/6club.png', '../images/cards/7club.png', '../images/cards/8club.png', '../images/cards/9club.png', '../images/cards/10club.png', ],
         suits: ['heart', 'club', 'diamond', 'spade'],
         players: ['player 1', 'player 2'],
         score: [0, 0],
@@ -48,15 +47,15 @@
     };
 
     // checking quit and restart buttons
-    quitBtn.addEventListener('click', function(){
+    quitBtn.addEventListener('click', function() {
         location.reload();
     });
 
-    resultQuitBtn.addEventListener('click', function(){
+    resultQuitBtn.addEventListener('click', function() {
         location.reload();
-    });    
+    });
 
-    startGame.addEventListener("click", function(){
+    startGame.addEventListener("click", function() {
         shuffleSound.play();
 
         quitBtn.className = "showing";
@@ -87,18 +86,18 @@
 
         pButtons.innerHTML = '<button id="hit">HIT</button> <button id="stand">STAND</button>';
 
-        document.getElementById('hit').addEventListener('click', function(){
+        document.getElementById('hit').addEventListener('click', function() {
             dealSound.play();
             setTimeout(dealCardPlayer, 1000);
         });
 
-        document.getElementById('stand').addEventListener('click', function(){
+        document.getElementById('stand').addEventListener('click', function() {
             Turn2()
         })
     }
 
     // turns of the dealer once the player stands
-    function Turn2(){
+    function Turn2() {
         gameData.index = 0;
         pButtons.innerHTML = ''
 
@@ -109,8 +108,7 @@
             // dealCardDealer();
             setTimeout(Turn2, 2000);
             // Turn2();
-        }
-        else {
+        } else {
             setTimeout(compareScores, 2000);
         }
 
@@ -132,7 +130,7 @@
 
         gameData.score[0] += gameData.drawNum;
         dScore += gameData.drawNum;
-        
+
         setTimeout(checkLosingCondition, 2000);
         // checkLosingCondition()
 
@@ -148,6 +146,10 @@
         console.log(gameData.drawSuit);
         console.log(gameData.chosenSuit);
         pCards.innerHTML += `<div class="card"><div id="cardInner><div class="cardFaceFront"><img src="../images/cards/${gameData.drawNum}${gameData.chosenSuit}.png" width="180" height="210"></div></div></div>`;
+
+        // angrytools.com css trasform
+
+        // <div class="cardFaceBack"><img src="../images/cardBack.png" width="180" height="210"></div>
 
         // pCards.innerHTML += `<div class="card"><div id="cardInner><div class="cardFaceBack"><img src="../images/cardBack.png" width="180" height="210"></div> <div class="cardFaceFront"><img src="../images/cards/${gameData.drawNum}${gameData.chosenSuit}.png" width="180" height="210"></div></div></div>`;
 
@@ -168,7 +170,7 @@
 
         gameData.score[1] += gameData.drawNum;
         pScore += gameData.drawNum;
-        
+
         setTimeout(checkLosingCondition, 2000);
         // checkLosingCondition();
     }
@@ -182,39 +184,34 @@
 
     // code for functions that check the scores and ends the game if a losing or winning condition is met
     function checkLosingCondition() {
-        if (gameData.score[1] === 21){
+        if (gameData.score[1] === 21) {
             winSound.play();
             resultText.innerHTML = "<b>CONGRATULATIONS, YOU WON!</b> <br> Your score is exactly 21!";
             resultOverlay.className = "showing";
 
-        }
-        else if (gameData.score[0] === 21){
+        } else if (gameData.score[0] === 21) {
             resultText.innerHTML = "<b>OH NO, YOU LOST!</b> <br> The dealer's hand is exactly 21.";
             resultOverlay.className = "showing";
-        }
-        else if (gameData.score[0] > 21){
+        } else if (gameData.score[0] > 21) {
             winSound.play();
             resultText.innerHTML = "<b>BUST</b> <br> <b>CONGRATULATIONS, YOU WON!</b> <br> The dealer's hand went over 21.";
             resultOverlay.className = "showing";
-            
-        }
-        else if (gameData.score[1] > 21){
+
+        } else if (gameData.score[1] > 21) {
             resultText.innerHTML = "<b>BUST</b> <br> <b>OH NO, YOU LOST!</b> <br> Your hand went over 21.";
             resultOverlay.className = "showing";
-        } 
+        }
     }
 
     function compareScores() {
-        if (gameData.score[0] > 21){
+        if (gameData.score[0] > 21) {
             winSound.play();
             resultText.innerHTML = "<b>BUST</b> <br> <b>CONGRATULATIONS, YOU WON!</b> <br> The dealer's hand went over 21.";
             resultOverlay.className = "showing";
-        }
-        else if (gameData.score[0] > gameData.score[1]){
+        } else if (gameData.score[0] > gameData.score[1]) {
             resultText.innerHTML = `<b>OH NO, YOU LOST!</b> <br> The dealer's score was ${gameData.score[0]} and your score was ${gameData.score[1]} .`;
             resultOverlay.className = "showing";
-        } 
-        else {
+        } else {
             winSound.play();
             resultText.innerHTML = `<b>CONGRATULATIONS, YOU WON!</b> <br> Your score was ${gameData.score[1]} and the dealer's score was ${gameData.score[0]} .`;
             resultOverlay.className = "showing";
@@ -222,22 +219,22 @@
     }
 
 
-     // code for score buttons
-     dScoreBtn.addEventListener("mouseover", function(event){
+    // code for score buttons
+    dScoreBtn.addEventListener("mouseover", function(event) {
         event.preventDefault();
         dScoreBtn.innerHTML = `SCORE:  ${gameData.score[0]}`;
         dScoreBtn.style.width = "220px"
     });
-    dScoreBtn.addEventListener("mouseout", function(event){
+    dScoreBtn.addEventListener("mouseout", function(event) {
         event.preventDefault();
         dScoreBtn.innerHTML = `REVEAL CURRENT SCORE`;
     });
-    pScoreBtn.addEventListener("mouseover", function(event){
+    pScoreBtn.addEventListener("mouseover", function(event) {
         event.preventDefault();
         pScoreBtn.innerHTML = `SCORE:  ${gameData.score[1]}`;
         pScoreBtn.style.width = "220px"
     });
-    pScoreBtn.addEventListener("mouseout", function(event){
+    pScoreBtn.addEventListener("mouseout", function(event) {
         event.preventDefault();
         pScoreBtn.innerHTML = `REVEAL CURRENT SCORE`;
     });
@@ -245,27 +242,27 @@
 
     // code for info/instructions overlay
     // code for styling the instructions buttons
-    howToPlay.addEventListener('mouseover', function(){
+    howToPlay.addEventListener('mouseover', function() {
         howToPlay.style.color = '#556056';
         infoBtn.style.color = 'white';
         infoBtn.style.backgroundColor = '#69776A';
     });
-    howToPlay.addEventListener('mouseout', function(){
+    howToPlay.addEventListener('mouseout', function() {
         howToPlay.style.color = 'white';
         infoBtn.style.color = '#525252';
         infoBtn.style.backgroundColor = '#F4F4F4';
     });
-    infoBtn.addEventListener('mouseover', function(){
+    infoBtn.addEventListener('mouseover', function() {
         howToPlay.style.color = '#556056';
         infoBtn.style.color = 'white';
         infoBtn.style.backgroundColor = '#69776A';
     });
-    infoBtn.addEventListener('mouseout', function(){
+    infoBtn.addEventListener('mouseout', function() {
         howToPlay.style.color = 'white';
         infoBtn.style.color = '#525252';
         infoBtn.style.backgroundColor = '#F4F4F4';
     });
-    
+
     // code for the interactions of the overlay and actual functions of opening and closing
     howToPlay.addEventListener("click", function(event) {
         event.preventDefault();
