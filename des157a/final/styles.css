@@ -1,6 +1,482 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Vidaloka', serif; 
+font-family: 'Italiana', serif;*/
 
-/* font-family: 'Source Sans Pro', sans-serif;
-font-family: 'Playfair Display', serif; */
+@font-face {
+    font-family: Andes;
+    src: url(fonts/Andes.ttf);
+    src: url(fonts/Andes.woff);
+    src: url(fonts/Andes.woff2);
+   
+}
+
+@font-face {
+    font-family: Moderne Sans;
+    src: url(fonts/ModerneSansFont.ttf);
+   
+}
+
+/* general code */
+
+body {
+    background-color: #8C998D;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1366px;
+    max-height: 768px;
+}
+
+h2 {
+    font-family: 'Moderne Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+
+/* Styling header */
+
+header {
+    height: 100px;
+}
+
+#spadeImg {
+    position: absolute;
+    top: 55px;
+    left: 60px;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-left: 120px;
+    font-family: 'Moderne Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+
+/* code for info button and overlay */
+
+#infoSection {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    right: 70px;
+}
+
+#infoSection p {
+    margin-right: 15px;
+    font-family: 'Moderne Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#infoBtn {
+    margin-top: 3px;
+    padding-top: 3px;
+    color: #525252;
+    background-color: #F4F4F4;
+    width: 45px;
+    height: 45px;
+    border: 0px;
+    border-radius: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#infoBtn:hover {
+    color: white;
+    background-color: #69776A;
+    cursor: pointer;
+}
+
+#howToPlay:hover {
+    cursor: pointer;
+}
+
+#infoOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+#infoOverlay article {
+    box-sizing: border-box;
+    background-color: #8C998D;
+    border-radius: 20px;
+    padding: 40px;
+    width: 850px;
+    height: 510px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#infoOverlay p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#backBtn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding-top: 7px;
+    color: #F4F4F4;
+    background-color: #69776A;
+    width: 35px;
+    height: 35px;
+    border: 0px;
+    border-radius: 40px;
+    font-family: 'Moderne Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#backBtn:hover {
+    color: white;
+    background-color: #556056;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* styling main gameplay area */
+
+#gameplay {
+    margin-left: 150px;
+}
+
+#deck {
+    position: absolute;
+    top: 290px;
+    right: 150px;
+}
+
+#middleButtons {
+    height: 30px;
+}
+
+#startgame {
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    padding: 25px 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #525252;
+    background-color: rgb(230, 230, 230);
+    text-transform: uppercase;
+}
+
+#startgame:hover {
+    color: white;
+    background-color: #556056;
+    cursor: pointer;
+}
+
+#showScoreBtn {
+    position: absolute;
+    top: 360px;
+    left: 150px;
+    margin-right: 10px;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #525252;
+    background-color: rgb(230, 230, 230);
+    text-transform: uppercase;
+}
+
+#showScoreBtn:hover {
+    color: white;
+    background-color: #69776A;
+    cursor: pointer;
+}
+
+#hideScoreBtn {
+    position: absolute;
+    top: 360px;
+    left: 150px;
+    margin-right: 10px;
+    padding: 13px 31px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #525252;
+    background-color: rgb(230, 230, 230);
+    text-transform: uppercase;
+}
+
+#hideScoreBtn:hover {
+    color: white;
+    background-color: #69776A;
+    cursor: pointer;
+}
+
+#quitBtn {
+    position: absolute;
+    top: 420px;
+    left: 150px;
+    padding: 10px 38px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid rgb(230, 230, 230);
+    color: white;
+    background-color: #8C998D;
+    text-transform: uppercase;
+}
+
+#quitBtn:hover {
+    color: #525252;
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+
+.card {
+    background-color: transparent;
+    perspective: 1000px;
+    width: 100px;
+}
+
+/* styling the dealer's section */
+
+#dealer {
+    padding-top: 20px;
+    display: flex;
+    height: 220px;
+}
+
+#dSection h2 {
+    margin: 0;
+    font-weight: 500;
+    padding: 10px 0px 0px 10px;
+    width: 150px;
+    border-radius: 10px;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#dScoreBtn {
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 240px;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    transition-property: opacity, visibility;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+}
+
+
+#dCards {
+    display: flex;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+
+/* styling the player's section */
+
+#player {
+    padding-top: 70px;
+    display: flex;
+}
+
+#pSection h2 {
+    margin: 0;
+    font-weight: 500;
+    width: 100px;
+    border-radius: 10px;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#pScoreBtn {
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 240px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition-property: opacity, visibility;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+}
+
+
+#pCards {
+    display: flex;
+}
+
+#pTrigger {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+#pImg {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("images/cardBack.png");
+    perspective: 100px;
+}
+
+#pButtons {
+    position: absolute;
+    top: 600px;
+    left: 140px;
+}
+
+#pButtons button {
+    padding: 15px 35px;
+    margin: 0 5px;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #525252;
+    background-color: rgb(230, 230, 230);
+}
+#pButtons button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #69776A;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+
+
+
+/* styling results overlay */
+
+#resultOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+#resultOverlay article {
+    box-sizing: border-box;
+    background-color: #8C998D;
+    border-radius: 20px;
+    padding: 60px;
+    width: 430px;
+    height: 330px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#resultOverlay p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#resultQuitBtn {
+    position: absolute;
+    top: 250px;
+    left: 240px;
+    padding: 10px 10px 5px 10px;
+    color: #F4F4F4;
+    background-color: #69776A;
+    border: 0px;
+    border-radius: 10px;
+    font-family: 'Moderne Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#resultQuitBtn:hover {
+    color: white;
+    background-color: #556056;
+    cursor: pointer;
+}
+
+#resultRestartBtn {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    padding: 10px 10px 5px 10px;
+    color: #F4F4F4;
+    background-color: #69776A;
+    border: 0px;
+    border-radius: 10px;
+    font-family: 'Moderne Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#resultRestartBtn:hover {
+    color: white;
+    background-color: #556056;
+    cursor: pointer;
+}
+
+/* styling footer */
+
+footer {
+    position: absolute;
+    top: 710px;
+    left: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+
 
 
 /* styling the design brief */
@@ -81,16 +557,194 @@ font-family: 'Playfair Display', serif; */
 }
 
 
+/* BELOW IS TEST CODE I WAS WORKING ON TRYING TO MAKE A CARD FLIP. I COULD NOT FIGURE IT OUT BUT I LEFT IT HERE IN CASE I WORK ON IT IN THE FUTURE */
+
+
+/* HTML */
+/* <div class="aCard">
+                <div class="aCard-inner">
+                    <div class = 'front face'>
+                        <img id="deck" src="images/deck.png" width="190" height="230" alt="deck of cards">
+                    </div>
+
+                    <div class = 'back face'>
+                        <img class="cardBack" src="images/cardBack.png" width="190" height="230">
+                    </div>
+                    <!-- <img id="deck" src="images/deck.png" width="190" height="230" alt="deck of cards">
+                    <img class="cardBack" src="images/cardBack.png"> -->
+            </div> */
+
+
+            /* <div class="card bg-dark text-white">
+            <div class="card-inner">
+                <img id="deck" src="images/deck.png" width="190" height="230" alt="deck of cards">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Last updated 3 mins ago</p>
+              </div>
+            </div>
+          </div>
+        <!-- <div class="aCard">
+            <div class="aCard-inner">
+                <div class = 'front face'>
+                    <img id="deck" src="images/deck.png" width="190" height="230" alt="deck of cards">
+                </div>
+
+                <div class = 'back face'>
+                    <img class="cardBack" src="images/cardBack.png" width="190" height="230">
+                </div>
+                <!-- <img id="deck" src="images/deck.png" width="190" height="230" alt="deck of cards">
+                <img class="cardBack" src="images/cardBack.png"> --> */
+        /* <!-- </div>  --> */
 
 
 
 
+        
+/* CSS */
+
+/* .aCard {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .aCard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .aCard.active .aCard-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .aCard img, .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    top:0;left:0;right:0;
+  }
+  
+  .cardBack {
+    transform: rotateY(180deg);
+    background:blue;
+    color:white;
+  }
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+    .face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+} */
+
+  /* .aCard {
+    position: relative;
+    margin:10px;
+    width: 190px;
+    height: 230px;
+    z-index : 1;
+    float:left;
+}
+.aCard {
+    perspective: 1000;
+}
+.aCard-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+}
+.aCard.active .aCard-inner {
+    transform: rotateY(180deg);
+}
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.face.back {
+    display: block;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+} */
+
+/* .card {
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    width: 130px;
+    height: 210px;
+}
+
+.cardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.cardFlipped {
+    transform: rotateY(180deg)
+}
+
+.cardFaceBack,
+.cardFaceFront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.cardFaceFront {
+    transform: rotateY(180deg);
+} */
 
 
+/* .card {
+    perspective: 1000px;
+    width: 140px;
+    height: 210px;
+}
 
+.cardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
 
+.cardInner.is-flipped {
+    transform: rotateY(180deg);
+}
+.cardInnerisFlipped {
+    transform: rotateY(180deg);
+}
 
+.cardFace {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
 
-
-
-
+.cardFaceFront {
+    transform: rotateY(180deg);
+} */

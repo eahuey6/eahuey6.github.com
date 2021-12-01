@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vidaloka&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img id="spadeImg" src="images/spadeIcon.png" alt="spade">
+        <h1>Blackjack</h1>
+    </header>
+
+
+    <section id="infoSection">
+        <p id="howToPlay">how to play</p>
+        <button id="infoBtn">?</button>
+    </section>
+
+
+    <section id="gameplay">
+        <section id="dealer">
+            <section id="dSection">
+                <h2 id="dealerH2">Dealer:</h2>
+                <p id="dScoreBtn" class="hidden"></p>
+            </section>
+            <div id="dCards"></div>
+        </section>
+
+        <div id="middle">
+            <img id="deck" src="images/deck.png" width="190" height="230" alt="deck of cards">
+            <div id="cards"></div>
+            <p id="actionText"></p>
+            <section id="middleButtons">
+                <button id="showScoreBtn" class="hidden">SHOW SCORES</button>
+                <button id="hideScoreBtn" class="hidden">HIDE SCORES</button>
+                <button id="quitBtn" class="hidden">QUIT GAME</button>
+                <button id="startgame" class="showing">START GAME</button>
+            </section>
+        </div>
+
+        <section id="player">
+            <section id="pSection">
+                <h2 id="playerH2">you:</h2>
+                <p id="pScoreBtn" class="hidden"></p>
+            </section>
+            <section>
+                <div id="pCards"></div>
+                <div id="pButtons"></div>
+            </section>
+        </section>
+
+    </section>
+
+    <section id="resultOverlay" class="hidden">
+        <article>
+            <p id="resultText"></p>
+            <section id="resultBtns">
+                <button id="resultQuitBtn">QUIT</button>
+                <button id="resultRestartBtn">RESTART</button>
+            </section>
+        </article>
+    </section>
+
+    <section id="infoOverlay" class="hidden">
+        <article>
+            <h2>How to Play BlackJack</h2>
+            <p>Your goal is to get a higher score than the dealer without going over 21. If at any point your score goes over 21, you automatically lose. If your score is 21 exactly, you automatically win. <br><br>At the beginning of the game, you will recieve 2 cards. Your score will be the added values of the cards in your hand. <br><br>Cards have the same values as their numbers but this game, <b>the value of an Ace is one</b>. The dealer will draw one card
+                at the start.  <br><br>If you want the dealer
+                to deal you another card, press the hit button. But if you do not want another card, press the stand button and the dealer will play out their turn.</p>
+            <button class="close" id="backBtn">X</button>
+        </article>
+    </section>
+
+    
+
+    <footer>
+        <a href="https://validator.w3.org/check?uri=https://eahuey6.github.io/des157a/final">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Feahuey6.github.io%2Fdes157a%2Fstudio3%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a>
+    </footer>
+</body>
+
+</html>
