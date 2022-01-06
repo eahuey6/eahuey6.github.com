@@ -319,7 +319,6 @@
 // const css = window.document.styleSheets[0];
     // const pImg = document.getElementById('pImg');
     // const pTrigger = document.getElementById('pTrigger');
-    
 //     pCards.innerHTML += `<div id="pTrigger"><div id="pImg"></div></div>`;
 
     //     const pImg = document.getElementById('pImg');
