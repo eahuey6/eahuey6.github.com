@@ -1,0 +1,257 @@
+/* font-family: 'Domine', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Vollkorn', serif; */
+
+
+
+* {
+    box-sizing: border-box;
+    transition: all 2s;
+}
+
+body {
+    background-color: #FCFCFC;
+    color: #070707;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 2s;
+}
+
+body.switch {
+    background-color: #ECE8E5;
+    color: #070707;
+    font-family: 'Vollkorn', serif;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+header {
+    margin: 0 auto 2em auto;
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 255px;
+    margin: auto;
+    margin-top: 50px;
+    /* background-color: rgb(235, 235, 235); */
+    /* border: 1px black solid; */
+    overflow: hidden;
+    color: black;
+}
+
+#banner.switch {
+    /* background-color: #333; */
+    transition: all 2s;
+}
+
+#banner h1 {
+    position: absolute;
+    top: -20px;
+    left: 90px;
+    text-transform: uppercase;
+    font-size: 42px;
+    letter-spacing: 3px;
+}
+
+#banner.switch h1 {
+    left: 0px;
+    top: 5px;
+    font-size: 64px;
+    letter-spacing: 5px;
+    color: #33302c;
+}
+#banner h2 {
+    position: absolute;
+    bottom: 30px;
+    left: 90px;
+    font-size: 26px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#banner.switch h2 {
+    left: 0px;
+    top: 120px;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #33302c;
+}
+
+#banner h3 {
+    position: absolute;
+    bottom: -10px;
+    left: 90px;
+    width: 260px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+#banner.switch h3 {
+    left: 0px;
+    top: 170px;
+    font-size: 24px;
+    font-weight: 300;
+    width: 1000px;
+    color: #33302c;
+}
+
+#barcode {
+    position: absolute;
+    top: 5px;
+    max-width: 62px;
+    max-height: 246px;
+}
+
+#windows {
+    position: absolute;
+    right: 0px;
+    max-width: 714px;
+    max-height: 252px;
+}
+
+#mug {
+    position: absolute;
+    right: 150px;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+#bar {
+    position: absolute;
+    right: 0;
+}
+
+#shelf {
+    position: absolute;
+    right: 105px;
+    bottom: 33px;
+    max-width: 325px;
+    max-height: 38px;
+}
+
+#line {
+    position: absolute;
+    top: -18px;
+    left: 15px;
+    background-color: black;
+    width: 2px;
+    height: 110%;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em auto;
+    max-width: 1100px;
+}
+
+main section {
+    width: 25%;
+    background-color: #F6F6F6;
+    margin: 0 .5em;
+    padding: 1em;
+}
+
+main section.switch {
+    background-color: #e0d8d1;
+    border-radius: 20px;
+}
+
+main section h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section li {
+    padding-left: 1.2em;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: #070707;
+    /* text-transform: uppercase; */
+}
+
+section a:hover {
+    background-color: #b4b4b4;
+    color: #333;
+}
+
+section.switch a {
+    color: #333;
+    font-family: 'Domine', serif;
+    font-size: 15px;
+}
+
+section.switch a:hover {
+    background-color: #4E4941;
+    color: rgb(235, 235, 235);
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    padding: 12px 30px 10px 30px;
+    background-color: #D9D9D9;
+    color: #333;
+    border-radius: 10px;
+    border: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #888888;
+    cursor: pointer;
+}
+
+button.switch {
+    background-color: #beb2a8;
+    border-color: #333;
+}
+
+button.switch:hover {
+    background-color: #4E4941;
+    color: rgb(235, 235, 235)
+}
+
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
