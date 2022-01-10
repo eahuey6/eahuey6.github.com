@@ -7,6 +7,8 @@ font-family: 'Vollkorn', serif; */
 * {
     box-sizing: border-box;
     transition: all 2s;
+    max-width: 1366px;
+
 }
 
 body {
@@ -54,7 +56,7 @@ header {
     transition: all 2s;
 }
 
-#banner h1 {
+#banner h2 {
     position: absolute;
     top: -20px;
     left: 90px;
@@ -63,14 +65,14 @@ header {
     letter-spacing: 3px;
 }
 
-#banner.switch h1 {
+#banner.switch h2 {
     left: 0px;
     top: 5px;
     font-size: 64px;
     letter-spacing: 5px;
     color: #33302c;
 }
-#banner h2 {
+#banner h1 {
     position: absolute;
     bottom: 30px;
     left: 90px;
@@ -80,7 +82,7 @@ header {
     text-transform: uppercase;
 }
 
-#banner.switch h2 {
+#banner.switch h1 {
     left: 0px;
     top: 120px;
     font-size: 36px;
