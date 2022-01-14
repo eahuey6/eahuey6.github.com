@@ -1,0 +1,84 @@
+
+
+
+
+/* font-family: 'Courier Prime', monospace;
+font-family: 'Cutive Mono', monospace;
+font-family: 'Syne Mono', monospace; */
+* {
+    /* transition: all .01s; */
+}
+
+#myVideo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+p {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 20px;
+}
+
+.lines {
+    transition: all .5s;
+    top: 480px;
+    left: 570px;
+}
+
+#line1 {
+    position: absolute;
+}
+#line2 {
+    position: absolute;
+}
+#line3 {
+    position: absolute;
+}
+#line4 {
+    position: absolute;
+}
+#line5 {
+    position: absolute;
+}
+
+
+.lines:hover {
+    background-color: white;
+    transition: 2s ease all;
+}
+
+.fa-expand {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 32px;
+    color: white;
+}
+
+.fa-expand:hover {
+    color: rgb(87, 87, 87);
+    cursor: pointer;
+}
+
+.fa-redo-alt {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 32px;
+    color: white;
+}
+
+.fa-redo-alt:hover{
+    color: rgb(87, 87, 87);
+    cursor: pointer;
+}
+
+
+/* #line1.hover {
+    transform: rotate(20deg);
+    color: white;
+} */
