@@ -33,20 +33,20 @@
     let newLine5LeftPos = linesLeftPos;
     let line5TopPos = 480;
 
-    // const resetBtn = document.querySelector('.fa-redo-alt');
-    // const fullscreen = document.querySelector('.fa-expand');
+    const resetBtn = document.querySelector('.fa-redo-alt');
+    const fullscreen = document.querySelector('.fa-expand');
 
-    // // code for reset and fullscreen buttons
-    // resetBtn.addEventListener('click', function(){
-    //     document.location.reload();
-    // })
-    // fullscreen.addEventListener('click', function(){
-    //     if (!document.fullscreenElement) {
-    //         document.documentElement.requestFullscreen();
-    //     } else {
-    //         document.exitFullscreen();
-    //     }
-    // })
+    // code for reset and fullscreen buttons
+    resetBtn.addEventListener('click', function(){
+        document.location.reload();
+    })
+    fullscreen.addEventListener('click', function(){
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen();
+        } else {
+            document.exitFullscreen();
+        }
+    })
 
     // code for when video ends
     myVideo.addEventListener('ended', function(){
