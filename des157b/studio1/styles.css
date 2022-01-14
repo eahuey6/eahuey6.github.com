@@ -20,7 +20,7 @@ p {
     font-size: 20px;
 }
 
-/* .lines {
+.lines {
     transition: all .5s;
     top: 480px;
     left: 570px;
@@ -29,7 +29,7 @@ p {
 .lines:hover {
     background-color: white;
     transition: 2s ease all;
-} */
+}
 
 
 #line1 {
