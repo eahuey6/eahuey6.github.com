@@ -55,22 +55,22 @@
         resetBtn.style.left = '50vw';
     })
 
-    // // lines rotation
-    // line1.addEventListener('mouseover', function(){
-    //     line1.style.transform = 'rotate(20deg)';
-    // })
-    // line2.addEventListener('mouseover', function(){
-    //     line2.style.transform = 'rotate(-20deg)';
-    // })
-    // line3.addEventListener('mouseover', function(){
-    //     line3.style.transform = 'rotate(20deg)';
-    // })
-    // line4.addEventListener('mouseover', function(){
-    //     line4.style.transform = 'rotate(-20deg)';
-    // })
-    // line5.addEventListener('mouseover', function(){
-    //     line5.style.transform = 'rotate(20deg)';
-    // })
+    // lines rotation
+    line1.addEventListener('mouseover', function(){
+        line1.style.transform = 'rotate(20deg)';
+    });
+    line2.addEventListener('mouseover', function(){
+        line2.style.transform = 'rotate(-20deg)';
+    });
+    line3.addEventListener('mouseover', function(){
+        line3.style.transform = 'rotate(20deg)';
+    });
+    line4.addEventListener('mouseover', function(){
+        line4.style.transform = 'rotate(-20deg)';
+    });
+    line5.addEventListener('mouseover', function(){
+        line5.style.transform = 'rotate(20deg)';
+    });
     
 
 
