@@ -20,7 +20,7 @@ p {
     font-size: 20px;
 }
 
-.lines {
+/* .lines {
     transition: all .5s;
     top: 480px;
     left: 570px;
@@ -29,7 +29,7 @@ p {
 .lines:hover {
     background-color: white;
     transition: 2s ease all;
-}
+} */
 
 
 #line1 {
@@ -48,7 +48,7 @@ p {
     position: absolute;
 }
 
-/* .fa-expand {
+.fa-expand {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -72,5 +72,5 @@ p {
 .fa-redo-alt:hover{
     color: rgb(87, 87, 87);
     cursor: pointer;
-} */
+}
 
