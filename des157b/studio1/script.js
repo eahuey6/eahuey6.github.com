@@ -35,8 +35,9 @@
 
     const resetBtn = document.querySelector('.fa-redo-alt');
     const fullscreen = document.querySelector('.fa-expand');
+    const keyboard = document.querySelector('.fa-keyboard');
 
-    // code for reset and fullscreen buttons
+    // code for reset and fullscreen buttons and load icon/screen
     resetBtn.addEventListener('click', function(){
         document.location.reload();
     })
@@ -47,6 +48,10 @@
             document.exitFullscreen();
         }
     })
+    myVideo.addEventListener('playing', function(){
+        keyboard.style.display = 'none';
+    })
+
 
     // code for when video ends
     myVideo.addEventListener('ended', function(){
