@@ -2,7 +2,6 @@
     'use strict';
 
     const myVideo = document.querySelector('#myVideo');
-    const bodyArea = document.querySelector('body');
 
     let i=0;
     const text1 = 'The woods are lovely,';
