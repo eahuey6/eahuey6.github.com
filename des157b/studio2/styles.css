@@ -3,6 +3,8 @@ body {
     background-color: #EBECF3;
     font-family: 'Montserrat', sans-serif;
     margin: 30px 100px;
+    max-width: 1366px;
+    max-height: 768px;
 }
 
 h1 {

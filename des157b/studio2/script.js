@@ -35,7 +35,6 @@
 
         let starsChosen = `stars${data[point].energy}.png`;
         let eyeChosen = `eye${data[point].hours}.png`;
-        console.log(`<img id="stars" src="images/${starsChosen}">`);
 
         starsDiv.innerHTML = `<img id="stars" src="images/${starsChosen}">`;
         eyeDiv.innerHTML = `<img id="stars" src="images/${eyeChosen}">`;
