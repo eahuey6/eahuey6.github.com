@@ -1,0 +1,54 @@
+{
+    "Jan9" : {
+        "day" : "Sunday",
+        "hours" : 7,
+        "energy": 4
+        
+    },
+    "Jan10" : {
+        "day" : "Monday",
+        "hours" : 10,
+        "energy": 5
+    },
+    "Jan11" : {
+        "day" : "Tuesday",
+        "hours" : 6,
+        "energy": 3
+    },
+    "Jan12" : {
+        "day" : "Wednesday",
+        "hours" : 6,
+        "energy": 3
+    },
+    "Jan13" : {
+        "day" : "Thursday",
+        "hours" : 7,
+        "energy": 4
+    },
+    "Jan14" : {
+        "day" : "Friday",
+        "hours" : 6,
+        "energy": 3
+    },
+    "Jan15" : {
+        "day" : "Saturday",
+        "hours" : 6,
+        "energy": 3
+    },
+    "Jan16" : {
+        "day" : "Sunday",
+        "hours" : 8,
+        "energy": 4
+    },
+    "Jan17" : {
+        "day" : "Monday",
+        "hours" : 4,
+        "energy": 1
+        
+    },
+    "Jan18" : {
+        "day" : "Tuesday",
+        "hours" : 5,
+        "energy": 2
+    }
+}
