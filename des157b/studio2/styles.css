@@ -1,10 +1,8 @@
 /* font-family: 'Montserrat', sans-serif; */
-
 body {
     background-color: #EBECF3;
     font-family: 'Montserrat', sans-serif;
     margin: 30px 100px;
-    transition: 2s ease all;
 }
 
 h1 {
