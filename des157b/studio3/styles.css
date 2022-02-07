@@ -1,0 +1,349 @@
+*{
+    font-family: 'Arimo', sans-serif;
+    /* color: white; */
+}
+
+
+/* make header text thicker and bigger */
+body {
+    width: 1368px;
+}
+
+#starsImg {
+    position: absolute;
+    width: 1366px;
+    max-height: 768px;
+    z-index: -10;
+}
+
+h1 {
+    position: absolute;
+    width: 1170px;
+    top: 315px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -4px;
+    font-size: 120px;
+    line-height: 120px;
+
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -4px;
+}
+
+
+/* code for section 1 */
+
+#section1 {
+    position: absolute;
+    top: 768px;
+    width: 1366px;
+}
+
+#section1-main {
+    position: relative;
+    float: right;
+    top: 70px;
+}
+
+.lines1 {
+    width: 950px;
+    height: 3px;
+    background-color: black;
+}
+
+.section1-p{
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    font-size: 48px;
+    text-align: right;
+    padding-right: 100px;
+}
+
+#snowImg {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    height: 400px;
+    z-index: -10;
+}
+
+.workReg-div {
+    position: absolute;
+    top: 345px;
+    width: 1368px;
+    overflow: hidden;
+}
+
+#workReg1 {
+    font-size: 110px;
+    width: 2400px;
+    text-align: right;
+
+    transform: translateX(100%);
+    animation: workReg1Animation 25s linear infinite;
+}
+
+#workReg2 {
+    font-size: 110px;
+    width: 2400px;
+    text-align: right;
+
+    transform: translateX(200%);
+    animation: workReg2Animation 50s linear infinite;
+}
+
+@keyframes workReg1Animation{
+    from{
+        transform: translateX(-100%)
+    }
+    to {
+        transform: translateX(100%)
+    }
+}
+
+@keyframes workReg2Animation{
+    from{
+        transform: translateX(-200%)
+    }
+    to {
+        transform: translateX(200%)
+    }
+}
+
+.workFlipped-div {
+    position: absolute;
+    top: 470px;
+    width: 1368px;
+    overflow: hidden;
+    transform: scale(-1, -1);
+}
+
+#workFlipped1 {
+    font-size: 110px;
+    width: 2400px;
+    text-align: right;
+
+    transform: translateX(100%);
+    animation: workFlipped1Animation 25s linear infinite;
+}
+
+#workFlipped2 {
+    font-size: 110px;
+    width: 2400px;
+    text-align: right;
+
+    transform: translateX(200%);
+    animation: workFlipped2Animation 50s linear infinite;
+}
+
+@keyframes workFlipped1Animation{
+    from{
+        transform: translateX(-100%)
+    }
+    to {
+        transform: translateX(100%)
+    }
+}
+
+@keyframes workFlipped2Animation{
+    from{
+        transform: translateX(-200%)
+    }
+    to {
+        transform: translateX(200%)
+    }
+}
+
+
+
+
+
+/* code for section 2 */
+
+#section2 {
+    position: absolute;
+    top: 1536px;
+    width: 1368px;
+}
+
+#dogImg {
+    position: absolute;
+    top: 110px;
+    right: 370px;
+    width: 300px;
+    z-index: -20;
+}
+
+#starImg {
+    position: absolute;
+    top: 240px;
+    right: 100px;
+    width: 300px;
+    z-index: -15;
+}
+
+#section2 h2{
+    position: absolute;
+    top: 60px;
+    font-size: 100px;
+    margin-left: 100px;
+}
+
+#section2 h2:hover {
+    animation: familyAnimation 90s linear infinite;
+    /* animation: familyAnimation 0.0005s linear infinite; */
+}
+
+@keyframes familyAnimation{
+    from{
+        transform: translateX(-200%)
+    }
+    to {
+        transform: translateX(200%)
+    }
+}
+
+#section2 h3 {
+    position: absolute;
+    top: 380px;
+    left: 100px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -4px;
+    font-size: 72px;
+}
+
+#dogText{
+    position: absolute;
+    top: 545px;
+    left: 100px;
+    width: 800px;
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+
+#cometText{
+    position: absolute;
+    top: 102px;
+    right: 100px;
+    width: 225px;
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+
+
+/* code for section 3 */
+
+#section3 {
+    position: absolute;
+    top: 2304px;
+    width: 1366px;
+    height: 768px;
+}
+
+
+.friends-div {
+    position: absolute;
+    top: 10px;
+    width: 1368px;
+    overflow: hidden;
+}
+
+#friends1 {
+    font-size: 110px;
+    width: 2400px;
+    text-align: right;
+
+    transform: translateX(100%);
+    animation: friends1Animation 25s linear infinite;
+}
+
+#friends2 {
+    font-size: 110px;
+    width: 2400px;
+    text-align: right;
+
+    transform: translateX(200%);
+    animation: friends2Animation 50s linear infinite;
+}
+
+@keyframes friends1Animation{
+    from{
+        transform: translateX(-100%)
+    }
+    to {
+        transform: translateX(100%)
+    }
+}
+
+@keyframes friends2Animation{
+    from{
+        transform: translateX(-200%)
+    }
+    to {
+        transform: translateX(200%)
+    }
+}
+
+
+#section3 h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    font-size: 64px;
+    text-align: right;
+    padding-right: 100px;
+}
+
+
+#section3 section section {
+    display: flex;
+    margin-left: 100px;
+}
+
+#section3-main{
+    position: absolute;
+    top: 280px;
+}
+
+#section3 p {
+    width: 600px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-size: 24px;
+    text-align: left;
+    padding-right: 100px;
+
+}
+
+#callP{
+    position: absolute;
+    top: 35px;
+    left: 360px;
+}
+
+#clubsP{
+    position: absolute;
+    top: 253px;
+    left: 360px;
+}
+
+.lines2 {
+    width: 1400px;
+    height: 3px;
+    background-color: black;
+}
+
+#zoomImg {
+    position: absolute;
+    top: 400px;
+    right: 100px;
+    width: 340px;
+
+}
