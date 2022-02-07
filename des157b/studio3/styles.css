@@ -197,7 +197,7 @@ h2 {
 
 #section2 h2:hover {
     animation: familyAnimation 90s linear infinite;
-    /* animation: familyAnimation 0.0005s linear infinite; */
+    
 }
 
 @keyframes familyAnimation{
