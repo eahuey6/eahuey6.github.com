@@ -1,0 +1,42 @@
+body {
+    margin: auto;
+    width: 1000px;
+    font-family: Montserrat, sans-serif;
+    background-color: rgb(241, 241, 241);
+}
+
+img {
+    height: 600px;
+    padding-right: 10px;
+}
+
+p {
+    margin: auto;
+    font-size: 20px;
+    width: 1000px;
+    padding: 20px 0px;
+    padding-bottom: 40px;
+    line-height: 32px;
+}
+
+h1 {
+    text-transform: uppercase;
+    padding: 30px 0px;
+}
+
+#images {
+    display: flex;
+    justify-content: center;
+}
+
+h2 a {
+    text-decoration: none;
+    color: black;
+
+}
+
+p a {
+    text-decoration: none;
+    color: rgb(40, 59, 161);
+    font-weight: 600;
+}
