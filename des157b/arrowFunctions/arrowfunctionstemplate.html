@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Arrow Function</title>
+    <style>
+        html {
+            background-color: #efefef;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4em;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(46, 67, 136);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sum Arrow Function Challenge</h1>
+
+    <p>This is a very short and simple function that just adds the two numbers and gives the sum. I took this example from the function examples assignment from DES157B. <a href="examples.html">Link to arrow function examples and challenges from slides</a> </p>
+
+    <h2>Named Function</h2>
+    <code>
+        <pre>
+            function returnSum (num1, num2){
+                var sum = num1 + num2;
+                return sum;
+            }
+        </pre>
+    </code>
+    
+
+    <h2>Function Expression</h2>
+    <code>
+        <pre>
+            const theSum = function(num1, num2){
+                var sum = num1 + num2;
+                return sum;
+            }
+        </pre>
+    </code>
+
+    <h2>Arrow Function</h2>
+    <code>
+        <pre>
+            const aVaraiable = (num1, num2) => num1 + num2;
+        </pre>
+    </code>
+
+    <footer> Evelyn Huey </footer>
+    
+</body>
+</html>
