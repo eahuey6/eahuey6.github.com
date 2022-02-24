@@ -1,0 +1,111 @@
+
+/* transition: all 1s; */
+
+body {
+    display: block;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    font-family: 'Marcellus', serif;
+    letter-spacing: 3px;
+    font-size: 32px;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    width: 400px;
+}
+
+h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+header {
+    width: 35%;
+}
+
+#gallery {
+    width: 63%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10px 10px 0 0;
+}
+
+.gallery-card {
+    border: 1px black solid;
+    margin: 5px;
+    height: 430px;
+}
+
+.card-content {
+    margin: 40px;
+}
+
+
+.card-address {
+    font-family: 'Marcellus', serif;
+    font-size: 24px;
+}
+
+.card-text {
+    font-family: 'Inter', serif;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+#nav-btns {
+    position: fixed;
+    list-style-type: none;
+    top: 300px;
+    left: 80px;
+}
+
+#nav-btns li{
+    margin-bottom: 120px;
+}
+
+#nav-btns li a{
+    padding: 15px 20px;
+    font-family: 'Marcellus', serif;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+
+#background-rectangle {
+    position: fixed;
+    top: 1vh;
+    left: 1vw;
+    width: 33%;
+    height: 100vh;
+    z-index: -100;
+    background-color: #F6F4F1;
+    border-radius: 10px;
+    /* opacity: 1;
+    background-size: 30px 30px;
+    background-image:  repeating-linear-gradient(0deg, #E7E7E7, #E7E7E7 1.2000000000000002px, #F6F4F1 1.2000000000000002px, #F6F4F1);;
+    border-radius: 10px; */
+}
+
+#stripes {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 120%;
+    z-index: -90;
+    opacity: 1;
+    background-size: 30px 30px;
+    background-image:  repeating-linear-gradient(0deg, #E7E7E7, #E7E7E7 1.2000000000000002px, #f6f4f100 1.2000000000000002px, #f6f4f100);
+}
+
+
+
+
+
