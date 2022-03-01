@@ -1,0 +1,151 @@
+
+/* transition: all 1s; */
+
+body {
+    display: block;
+    background-color: white;
+    color: black;
+
+}
+
+h1 {
+    font-family: 'Marcellus', serif;
+    letter-spacing: 3px;
+    font-size: 32px;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    width: 400px;
+}
+
+h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* styling nav btns */
+
+#nav-btns {
+    position: fixed;
+    list-style-type: none;
+    top: 300px;
+    left: 80px;
+}
+
+#nav-btns li{
+    margin-bottom: 120px;
+}
+
+#nav-btns li a{
+    padding: 15px 20px;
+    font-family: 'Marcellus', serif;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+
+#background-rectangle {
+    position: fixed;
+    top: 1vh;
+    left: 1vw;
+    width: 33%;
+    height: 98vh;
+    z-index: -100;
+    background-color: #F6F4F1;
+    border-radius: 10px;
+    /* opacity: 1;
+    background-size: 30px 30px;
+    background-image:  repeating-linear-gradient(0deg, #E7E7E7, #E7E7E7 1.2000000000000002px, #F6F4F1 1.2000000000000002px, #F6F4F1);;
+    border-radius: 10px; */
+}
+
+#stripes {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -90;
+    opacity: 1;
+    background-size: 30px 30px;
+    background-image:  repeating-linear-gradient(0deg, #E7E7E7, #E7E7E7 1.2000000000000002px, #f6f4f100 1.2000000000000002px, #f6f4f100);
+}
+
+/* styling main stuff and form */
+
+main {
+    display: flex;
+}
+
+header {
+    width: 35%;
+}
+
+#main-article {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    padding: 130px 0 20px 0;
+    font-size: 36px;
+    font-family: 'Marcellus', serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#main-article section p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    width: 445px;
+    padding-bottom: 50px;
+}
+
+
+#goGallery-btn {
+    margin: 40px auto 0 auto;
+    width: 265px;
+}
+
+#goGallery-btn a {
+    font-family: 'Marcellus', serif;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+#goGallery-btn a:hover {
+    background-color: rgb(0, 0, 0, 0);
+    color: black;
+    border: solid black 1px;
+}
+
+#entry-btn {
+    margin: 18px auto 0 auto;
+    width: 219px;
+}
+
+#entry-btn a{
+    font-family: 'Marcellus', serif;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border: solid black 1px;
+    padding: 20px;
+}
+
+#entry-btn a:hover {
+    color: white;
+    background-color: black;
+}
+
+#orText {
+    margin-top: 40px;
+    text-align: center;
+}
+
+

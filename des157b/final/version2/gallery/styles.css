@@ -1,0 +1,179 @@
+
+/* transition: all 1s; */
+
+body {
+    display: block;
+    background-color: white;
+    color: black;
+
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Marcellus', serif;
+    letter-spacing: 3px;
+    font-size: 32px;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    width: 400px;
+}
+
+h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+header {
+    width: 35%;
+}
+
+#gallery {
+    width: 63%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10px 10px 0 0;
+}
+
+.gallery-card {
+    border: 1px black solid;
+    margin: 5px;
+    height: 430px;
+}
+
+.card-content {
+    margin: 40px;
+}
+
+
+.card-address {
+    font-family: 'Marcellus', serif;
+    font-size: 24px;
+}
+
+.card-text {
+    font-family: 'Inter', serif;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+#nav-btns {
+    position: fixed;
+    list-style-type: none;
+    top: 300px;
+    left: 80px;
+}
+
+#nav-btns li{
+    margin-bottom: 120px;
+}
+
+#nav-btns li a{
+    padding: 15px 20px;
+    font-family: 'Marcellus', serif;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+
+#background-rectangle {
+    position: fixed;
+    top: 1vh;
+    left: 1vw;
+    width: 33%;
+    height: 98vh;
+    z-index: -100;
+    background-color: #F6F4F1;
+    border-radius: 10px;
+    /* opacity: 1;
+    background-size: 30px 30px;
+    background-image:  repeating-linear-gradient(0deg, #E7E7E7, #E7E7E7 1.2000000000000002px, #F6F4F1 1.2000000000000002px, #F6F4F1);;
+    border-radius: 10px; */
+}
+
+#stripes {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 1500px;
+    z-index: -90;
+    opacity: 1;
+    background-size: 30px 30px;
+    background-image:  repeating-linear-gradient(0deg, #E7E7E7, #E7E7E7 1.2000000000000002px, #f6f4f100 1.2000000000000002px, #f6f4f100);
+    /* background-repeat: repeat-y; */
+}
+
+/* getboundingclient .height or .y in JS look in 157a example files*/
+
+
+
+
+#card-overlay {
+    position: fixed;
+    top: 0;
+    right: 2vh;
+    width: 64%;
+    height: 100vh;
+    background-color: white;
+}
+#card-overlay-container {
+    position: absolute;
+    top: 20px;
+    height: 80vh;
+    border: 1px black solid;
+}
+
+#card-overlay-content {
+    margin: 120px;
+}
+
+#share-btns {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 20px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#share-btns li {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+    padding: 0 30px;
+}
+
+#card-overlay-backBtn {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+}
+
+/* overalay code */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
