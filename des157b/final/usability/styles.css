@@ -1,0 +1,124 @@
+/* * {
+    transition: all 1s;
+} */
+
+body {
+    display: block;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    font-family: 'Marcellus', serif;
+    letter-spacing: 3px;
+    font-size: 32px;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    width: 400px;
+}
+
+
+h2 {
+    padding-top: 100px;
+    font-size: 36px;
+    font-family: 'Marcellus', serif;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+a {
+    font-family: 'Marcellus', serif; 
+    text-decoration: none;
+}
+
+#affirmationBtn-home {
+    margin: 40px auto 0 auto;
+    width: 318px;
+}
+
+#affirmationBtn-home a {
+    font-size: 32px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+#affirmationBtn-home a:hover {
+    background-color: rgb(0, 0, 0, 0);
+    color: black;
+    border: solid black 1px;
+}
+
+#galleryBtn-home {
+    margin: 50px auto 0 auto;
+    width: 180px;
+}
+
+#galleryBtn-home a{
+    font-size: 24px;
+    color: black;
+    border: solid black 1px;
+    padding: 20px;
+}
+
+#galleryBtn-home a:hover {
+    color: white;
+    background-color: black;
+}
+
+#orText {
+    margin-top: 40px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    width: 600px;
+    font-weight: 300;
+}
+
+#background-rectangle {
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+    width: 98vw;
+    height: 98vh;
+    z-index: -100;
+    background-color: #F6F4F1;
+    border-radius: 10px;
+    /* opacity: 1;
+    background-size: 30px 30px;
+    background-image:  repeating-linear-gradient(0deg, #E7E7E7, #E7E7E7 1.2000000000000002px, #F6F4F1 1.2000000000000002px, #F6F4F1);;
+    border-radius: 10px; */
+}
+
+#stripes {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -90;
+    opacity: 1;
+    background-size: 30px 30px;
+    background-image:  repeating-linear-gradient(0deg, #E7E7E7, #E7E7E7 1.2000000000000002px, #f6f4f100 1.2000000000000002px, #f6f4f100);
+}
+
+
+main {
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+
+main p {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+

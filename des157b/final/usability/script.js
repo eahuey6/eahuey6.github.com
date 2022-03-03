@@ -14,6 +14,8 @@
     let persons = document.getElementsByName("person");
     let chosenPerson;
 
+    alert('Hello! Thank you for helping me our and participating in the usability test!  Task 1: Submit an affirmation using the form  Task 2: Look at your submission on the gallery page')
+
     async function displayAffirmations(){
         const affirmations = Parse.Object.extend('Affirmations');
         const query = new Parse.Query(affirmations);
@@ -40,6 +42,10 @@
                     `;
                 gallerySection.append(theArticle);
             });
+
+            let pageHeight = document.body.clientHeight;
+
+            stripes.style.height = `${pageHeight}px`;
 
         } catch (error) {
             console.error('Error while fetching Affirmations', error);

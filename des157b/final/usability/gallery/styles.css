@@ -108,7 +108,7 @@ header {
     position: absolute;
     top: 0;
     width: 100vw;
-    height: 1500px;
+    /* height: 1500px; */
     z-index: -90;
     opacity: 1;
     background-size: 30px 30px;
