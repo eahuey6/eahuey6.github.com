@@ -79,20 +79,17 @@
 
 
 
-    // code for overlay
+    // // code for overlay
     
-    overlayBackBtn.addEventListener('click', function(event){
-        overlaySection.className = 'hidden';
-    })
+    // overlayBackBtn.addEventListener('click', function(event){
+    //     overlaySection.className = 'hidden';
+    // })
 
-    document.addEventListener('click', function(event){
-
-        if (event.target.matches('.seeMoreBtn')) {
-            console.log('test');
-            
-        }
-
-    })
+    // document.addEventListener('click', function(event){
+    //     if (event.target.matches('.seeMoreBtn')) {
+    //         console.log('test');
+    //     }
+    // })
 
     // seeMoreBtns.addEventListener('click', function(event){
     //     console.log('test');

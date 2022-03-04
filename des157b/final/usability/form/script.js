@@ -71,7 +71,7 @@
 
     // function resetFormFields(){
     //     document.getElementById('address').value = '';
-    //     document.getElementById('text').value = '';
+    //     document.getElementById('text').value = '';b
     //     document.getElementById('person').value = '';
     // }
     
