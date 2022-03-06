@@ -1,0 +1,539 @@
+
+/* transition: all 1s; */
+
+body {
+    background-color: white;
+    color: black;
+}
+
+header {
+    width: 35%;
+}
+
+
+
+/* style for logo */
+
+#logo {
+    font-family: 'Marcellus', serif;
+    letter-spacing: 3px;
+    font-size: 32px;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    width: 400px;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#navigation {
+    position: fixed;
+    z-index: -10;
+}
+
+
+/* styling nav btns */
+#nav-btns {
+    position: fixed;
+    list-style-type: none;
+    top: 300px;
+    left: 80px;
+}
+
+#affirmation-btn{
+    margin-bottom: 50px;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-family: 'Marcellus', serif;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border: solid black 1px;
+}
+
+#affirmation-btn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0);
+    color: black;
+    border: solid black 1px;
+}
+
+#gallery-btn{
+    margin-bottom: 50px;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-family: 'Marcellus', serif;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border: solid black 1px;
+}
+
+#gallery-btn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0);
+    color: black;
+    border: solid black 1px;
+}
+
+
+/* background */
+#background-rectangle {
+    position: fixed;
+    top: 1vh;
+    left: 1vw;
+    width: 33%;
+    height: 98vh;
+    z-index: -150;
+    background-color: #F6F4F1;
+    border-radius: 10px;
+}
+
+#stripes {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    /* height: 100vh; */
+    z-index: -130;
+    opacity: 1;
+    background-size: 30px 30px;
+    background-image:  repeating-linear-gradient(0deg, #E7E7E7, #E7E7E7 1.2000000000000002px, #f6f4f100 1.2000000000000002px, #f6f4f100);
+}
+
+
+
+/* -----------------------STYLING THE OVERLAYS-------------------------- */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+/* -----------------------STYLING LANDING PAGE-------------------------- */
+
+#landingPage {
+    display: block;
+    color: black;
+}
+
+#background-rectangle-landing {
+    position: fixed;
+    top: 1vh;
+    left: 1vw;
+    width: 98vw;
+    height: 98vh;
+    z-index: -10;
+    background-color: #F6F4F1;
+    border-radius: 10px;
+}
+
+#stripes-landing {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -9;
+    opacity: 1;
+    background-size: 30px 30px;
+    background-image:  repeating-linear-gradient(0deg, #E7E7E7, #E7E7E7 1.2000000000000002px, #f6f4f100 1.2000000000000002px, #f6f4f100);
+}
+
+#h1-landing {
+    font-family: 'Marcellus', serif;
+    letter-spacing: 3px;
+    font-size: 32px;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    width: 400px;
+}
+
+
+#h2-landing {
+    padding-top: 100px;
+    font-size: 36px;
+    font-family: 'Marcellus', serif;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
+#affirmationBtn-home {
+    margin: 40px auto 0 auto;
+    width: 318px;
+    text-align: center;
+    font-family: 'Marcellus', serif; 
+    font-size: 32px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border: solid black 1px;
+}
+
+#affirmationBtn-home:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0);
+    color: black;
+}
+
+
+
+#galleryBtn-home{
+    margin: 20px auto 0 auto;
+    width: 160px;
+    text-align: center;
+    font-family: 'Marcellus', serif; 
+    font-size: 22px;
+    color: white;
+    background-color: black;
+    border: solid black 1px;
+    padding: 18px;
+    border: solid black 1px;
+}
+
+#galleryBtn-home:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0);
+    color: black;
+}
+
+#orText {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+#p-landing{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    width: 600px;
+    font-weight: 300;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#landingPage section {
+    position: fixed;
+    display: block;
+    width: 700px;
+    margin: 0 25%;
+    margin-top: 80px;
+}
+
+
+
+
+
+
+
+/* -----------------------STYLING FOR FORM-------------------------- */
+
+
+#form-article {
+    position: fixed;
+    right: 1vh;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+#form-article p {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* styling form */
+
+#form-section {
+    width: 37vw;
+    margin-top: 10px;
+}
+
+form {
+    font-family: 'Inter', sans-serif;
+}
+
+label, input {
+    /* display: block; */
+}
+
+#addressLabel {
+    /* position: absolute; */
+    font-family: 'Marcellus', serif;
+    font-size: 22px;
+}
+
+
+#affirmationLabel {
+    /* position: absolute; */
+    font-family: 'Marcellus', serif;
+    font-size: 22px;
+}
+
+
+input[type="text"] {
+    padding-left: 10px;
+    border: 1px solid #000000;
+    background-color: white;
+    height: 30px;
+    width: 35vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(49, 49, 49)
+}
+textarea[type="text"] {
+    padding-left: 10px;
+    border: 1px solid #000000;
+    background-color: white;
+    height: 35vh;
+    width: 35vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(49, 49, 49)
+}
+
+
+/* sty;ing fieldset */
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+fieldset legend {
+    font-family: 'Marcellus', serif;
+    font-size: 22px;
+    padding: 20px 0;
+}
+
+fieldset label {
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    border: 1px solid #000000;
+}
+
+fieldset label:hover {
+    background-color: #1f1f1f;
+    color: white;
+    cursor: pointer;
+}
+
+fieldset input,
+fieldset label {
+    display: inline;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+}
+
+fieldset input[type="radio"]:checked+label {
+    background-color: black;
+    color: white;
+}
+
+/* styling submit btn */
+input[type="submit"] {
+    margin: auto;
+    margin-top: 40px;
+    padding: 12px 50px 10px 50px;
+    background-color: #000000;
+    color: white;
+    font-family: 'Marcellus', serif;
+    font-weight: 300;
+    font-size: 26px;
+    letter-spacing: 2px;
+    border: 0px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #3d3d3d;
+}
+
+
+
+
+
+/* -----------------------STYLING FOR GALLERY-------------------------- */
+
+#galleryPage {
+    position: absolute;
+    right: 1vh;
+    width: 63%;
+}
+
+#gallery {
+    /* width: 63%; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10px 10px 0 0;
+}
+
+.gallery-card {
+    border: 1px black solid;
+    margin: 5px;
+    height: 400px;
+}
+
+.card-content {
+    margin: 40px;
+}
+
+.card-address {
+    font-family: 'Marcellus', serif;
+    font-size: 24px;
+}
+
+.card-text {
+    font-family: 'Inter', serif;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+#card-overlay {
+    position: fixed;
+    top: 0;
+    right: 2vh;
+    width: 64%;
+    height: 100vh;
+    background-color: white;
+}
+#card-overlay-container {
+    position: absolute;
+    top: 20px;
+    height: 80vh;
+    border: 1px black solid;
+}
+
+#card-overlay-content {
+    margin: 120px;
+}
+
+#share-btns {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 20px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#share-btns li {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+    padding: 0 30px;
+}
+
+#card-overlay-backBtn {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+}
+
+
+/* -----------------------STYLING FOR THANK YOU PAGE------------------------- */
+
+
+
+#main-article {
+    width: 65%;
+    display: flex;
+    position: fixed;
+    right: 1vh;
+    justify-content: center;
+}
+
+#h2-thank {
+    padding: 130px 0 20px 0;
+    font-size: 36px;
+    font-family: 'Marcellus', serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#p-thank {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    width: 445px;
+    padding-bottom: 50px;
+}
+
+
+
+#goGallery-btn{
+    margin: 40px auto 0 auto;
+    width: 265px;
+    font-family: 'Marcellus', serif;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    border: solid black 1px;
+}
+
+#goGallery-btn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0);
+    color: black;
+}
+
+#entry-btn{
+    margin: 18px auto 0 auto;
+    width: 219px;
+    text-align: center;
+    font-family: 'Marcellus', serif;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border: solid black 1px;
+    padding: 20px;
+}
+
+#entry-btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+#orText {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+

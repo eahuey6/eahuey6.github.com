@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Marcellus&display=swap" rel="stylesheet">
+
+
+   <!-- aos -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <!-- kursor -->
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+
+    <link href="styles.css" rel="stylesheet" />
+    
+
+    <!-- AOS -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <!-- Kursor -->
+    <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
+
+    <!-- parse library -->
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+
+    <script src="script.js" defer></script>
+
+    <title>Usability Test</title>
+</head>
+<body>
+    
+
+    <div id="background-rectangle"></div>
+    <div id="stripes"></div>
+        
+    <main>
+        <div id="navigation" >
+            <header>
+                <h1 id="logo">Dear Stranger . . .</h1>
+
+                <ul id="nav-btns">
+                    <li id="affirmation-btn">Submit Affirmation</li>
+                    <li id="gallery-btn">View Gallery</li>
+                </ul>
+            </header>
+        </div>
+
+        <div id="mainBody">
+            <div id="landingPage" class="showing">
+                <div id="background-rectangle-landing"></div>
+                <div id="stripes-landing"></div>
+
+                <header>
+                    <h1 id="h1-landing">Dear Stranger . . .</h1>
+                </header>
+
+                <section>
+                    <h2 id="h2-landing">Collection of Anonymous Affirmations</h2>
+                    <p id="p-landing">Dear Stranger... is a safe space to affirm people anonymously, whether that be a stranger who held the door open for you or a close family member. It is also a collection of all the anonymous affirmations submitted to be viewed to spark empathy, happiness, joy, and humor. </p>
+
+                    
+                    <p id="affirmationBtn-home">Submit Affirmation</p>
+                    
+                    <p id="orText">or</p>
+                    
+                    <p id="galleryBtn-home">View Gallery</p>
+                    
+                </section>
+            </div>
+
+            <div id="formPage" class="hidden">
+                <article id="form-article">
+                    <section id="form-section">
+                        <p>Write your affirmation! Don’t forget to address it to someone in a vague way, do not put in their name. (Example: To the stranger I met on the bus)</p>
+                        <p id="charLimit">max limit: 750 characters</p>
+                        <form id="addAffirmation-form">
+                            <label for="address"id="addressLabel" >To:</label>
+                            <input class="responses" type="text" id="address" name="address" required>
+
+                            <label for="affirmation" id="affirmationLabel">Affirmation:</label>
+                            <textarea class="responses" type="text" id="affirmation" name="text" maxlength="750" rows="5" cols="33" required></textarea>
+
+                            <fieldset>
+                                <legend>Who is this addressed to?</legend>
+                                
+                                <input class="responses" type="radio" name="person" id="stranger" value="stranger">
+                                <label class="personClass" for="stranger">Stranger</label>
+
+                                <input class="responses" type="radio" name="person" id="acquaintance" value="acquaintance">
+                                <label class="personClass" for="acquaintance">Acquaintance</label>
+
+                                <input class="responses" type="radio" name="person" id="friend" value="friend">
+                                <label class="personClass" for="friend">Friend</label>
+
+                                <input class="responses" type="radio" name="person" id="self" value="family">
+                                <label class="personClass" for="self">Self</label>
+
+                            </fieldset>
+                            <!-- <label for="decor" class="labels">A decoration</label>
+                            <input type="text" id="decor" required> -->
+
+                            <center><input id="submitBtn" type="submit" value="Affirm"></center>
+                        </form>
+                    </section>
+                </article>
+            </div>
+
+            <div id="thankPage" class="hidden">
+                <article id="main-article">
+                    <section>
+                        <h2 id="h2-thank">THANK YOU</h2>
+                        <p id="p-thank">Thank you for submitting an anonymous affirmation! You did a good thing today!</p>
+
+                        
+                        <p id="goGallery-btn">Go To Gallery</p>
+                        
+                        <p id="orText">or</p>
+                        
+                        <p id="entry-btn">Submit Another Entry</p>
+                        
+                    </section>
+                </article>
+            </div>
+
+            <div id="galleryPage" class="hidden">
+                <section id="right-section">
+                    <section id="gallery">
+                        
+                    </section>
+                </section>
+            </div>
+
+            <div id="cardPage">
+                <section id="card-overlay" class="hidden">
+                    <section id="card-overlay-container">
+                        <section id="card-overlay-content">
+                            <h3 class="card-address">Dear <br><span class="card-name">Friend of a Friend</span>, </h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </section>
+                        <p id="card-overlay-backBtn">x</p>
+                    </section>
+                    <ul id="share-btns">
+                        <li>Share on Social Media:</li>
+                        <li><a href="https://www.facebook.com/sharer.php"><img src="images/facebook.png" alt="facebook icon" width="40"></a></li>
+                        <li><a href="https://twitter.com/intent/tweet"><img src="images/twitter.png" alt="twitter icon" width="40"></a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    
+    </main>
+    
+</body>
+</html>
