@@ -97,8 +97,8 @@ header {
     position: absolute;
     top: 0;
     width: 100vw;
-    /* height: 100vh; */
-    z-index: -130;
+    height: 100%;
+    z-index: -120;
     opacity: 1;
     background-size: 30px 30px;
     background-image:  repeating-linear-gradient(0deg, #E7E7E7, #E7E7E7 1.2000000000000002px, #f6f4f100 1.2000000000000002px, #f6f4f100);
@@ -403,12 +403,12 @@ input[type="submit"]:hover {
 
 .card-address {
     font-family: 'Marcellus', serif;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .card-text {
     font-family: 'Inter', serif;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 32px;
 }
 
@@ -456,6 +456,26 @@ input[type="submit"]:hover {
     right: 30px;
     font-family: 'Inter', sans-serif;
     font-size: 30px;
+}
+
+
+.moreBtn{
+    margin: 0px auto 0 auto;
+    width: 80px;
+    text-align: center;
+    font-family: 'Marcellus', serif; 
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border: solid black 1px;
+    padding: 10px;
+    border: solid black 1px;
+}
+
+.moreBtn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0);
+    color: black;
 }
 
 
