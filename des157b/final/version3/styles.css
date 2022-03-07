@@ -460,6 +460,7 @@ input[type="submit"]:hover {
 }
 
 #card-overlay-backBtn:hover {
+    cursor: pointer;
     background-color: black;
     color: white;
 }
