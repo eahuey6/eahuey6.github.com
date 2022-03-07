@@ -11,6 +11,7 @@
     const addAffirmationForm = document.getElementById('addAffirmation-form');
     const inputs = document.querySelectorAll('.responses:not([type=radio');
 
+
     let persons = document.getElementsByName("person");
     let chosenPerson;
 
@@ -27,6 +28,7 @@
     const formPage = document.getElementById('formPage');
     const galleryPage = document.getElementById('galleryPage');
     const thankPage = document.getElementById('thankPage');
+    const cardPage = document.getElementById('cardPage');
 
     // landing page 
     const affirmationBtnHome = document.getElementById('affirmationBtn-home');
@@ -44,6 +46,7 @@
         galleryPage.className = 'hidden';
         thankPage.className = 'hidden';
         formPage.className = 'hidden';
+        cardPage.className = 'hidden';
     })
 
     affirmationNav.addEventListener('click', function(){
@@ -51,6 +54,7 @@
         galleryPage.className = 'hidden';
         thankPage.className = 'hidden';
         formPage.className = 'showing';
+        cardPage.className = 'hidden';
     })
 
     galleryNav.addEventListener('click', function(){
@@ -58,6 +62,7 @@
         galleryPage.className = 'showing';
         thankPage.className = 'hidden';
         formPage.className = 'hidden';
+        cardPage.className = 'hidden';
         startGalleryPage()
         
     })
@@ -171,16 +176,15 @@
                 const text = eachAffirmation.get('text');
                 const person = eachAffirmation.get('person');
                 let cardText;
-                let moreBtnTag;
+                
 
                 if (text.length > 230){
                     const slicedText = text.slice(0, 230);
                     cardText = `${slicedText}...`
-                    moreBtnTag = '<button class="seeMoreBtn">see more</button>';
 
                 } else {
                     cardText = text;
-                    moreBtnTag = '';
+                    
                 }
 
                 const theArticle = document.createElement('article');
@@ -190,7 +194,7 @@
                 <section class="card-content">
                     <h3 class="card-address">Dear <br><span class="card-name">${address}</span>, </h3>
                     <p class="card-text">${cardText}</p>
-                    ${moreBtnTag}
+                    <button class="seeMoreBtn">see more</button>
                 </section>
                     `;
                 gallerySection.append(theArticle);

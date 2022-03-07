@@ -415,7 +415,7 @@ input[type="submit"]:hover {
 #card-overlay {
     position: fixed;
     top: 0;
-    right: 2vh;
+    right: 1.3vh;
     width: 64%;
     height: 100vh;
     background-color: white;
