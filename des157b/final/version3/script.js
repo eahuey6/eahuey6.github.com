@@ -40,6 +40,7 @@
 
     // card page 
     const cardContainer = document.querySelector('#card-overlay-container');
+    const cardBackBtn = document.querySelector('#card-overlay-backBtn');
 
     
     
@@ -246,6 +247,14 @@
 
 
     // code for individual gallery card
+
+    document.addEventListener('click', function(event){
+        if (event.target.matches('#card-overlay-backBtn')){
+            galleryPage.className = 'showing';
+            cardPage.className = 'hidden';
+        }
+    }, false);
+
     document.addEventListener('click', function(event){
         if (event.target.matches('.moreBtn')){
             const thisRecord = event.target.getAttribute('id').slice(2);
@@ -276,6 +285,7 @@
                             <h3 class="card-address">Dear <br><span class="card-name">${thisAddress}</span>, </h3>
                             <p class="card-text">${thisText}</p>
                 </section>
+                <p id="card-overlay-backBtn">x</p>
                     `;
                 cardContainer.append(overlaySection);
                 console.log('success');
