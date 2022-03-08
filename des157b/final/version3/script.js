@@ -15,7 +15,7 @@
     let persons = document.getElementsByName("person");
 
 
-    const stripes = document.getElementById('stripes');
+    
 
     const logoBtn = document.getElementById('logo');
     const affirmationNav = document.getElementById('affirmation-btn');
@@ -101,9 +101,6 @@
 
 
     // ------------------FORM PAGE CODE------------------------
-    // stripe code
-    let pageHeight = document.body.clientHeight;
-    stripes.style.height = `${pageHeight}px`;
 
     // add affirmation to b4a 
 
@@ -169,6 +166,7 @@
         thankPage.className = 'hidden';
         affirmationNav.style.textDecoration = 'none';
         galleryNav.style.textDecoration = 'underline';
+        startGalleryPage();
     })
     entryBtnThank.addEventListener('click', function(){
         formPage.className = 'hidden';
@@ -220,7 +218,6 @@
                 gallerySection.append(theArticle);
             });
 
-            setStripes();
 
         } catch (error) {
             console.error('Error while fetching Affirmations', error);
@@ -228,12 +225,7 @@
         
     }
 
-    function setStripes(){
-        // styles the responsive stripe height on the page
-        let pageHeight = document.body.clientHeight;
-        stripes.style.height = `${pageHeight}px`;
-        console.log(pageHeight);
-    }
+    
 
     function startGalleryPage(){
         try {

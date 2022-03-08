@@ -4,6 +4,12 @@
 body {
     background-color: white;
     color: black;
+    width: 100vw;
+    height: 100vh;
+    z-index: -120;
+    opacity: 1;
+    background-size: 30px 30px;
+    background-image:  repeating-linear-gradient(0deg, #E7E7E7, #E7E7E7 1.2000000000000002px, #f6f4f100 1.2000000000000002px, #f6f4f100);
 }
 
 header {
@@ -89,20 +95,11 @@ header {
     width: 33%;
     height: 98vh;
     z-index: -150;
-    background-color: #F6F4F1;
+    background-color: rgba(236, 231, 222, 0.5);
     border-radius: 10px;
 }
 
-#stripes {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100%;
-    z-index: -120;
-    opacity: 1;
-    background-size: 30px 30px;
-    background-image:  repeating-linear-gradient(0deg, #E7E7E7, #E7E7E7 1.2000000000000002px, #f6f4f100 1.2000000000000002px, #f6f4f100);
-}
+
 
 
 
