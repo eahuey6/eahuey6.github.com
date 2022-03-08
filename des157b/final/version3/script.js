@@ -23,6 +23,7 @@
 
 
     // get pages
+    const navigationBar = document.getElementById('navigation');
     const landingPage = document.getElementById('landingPage');
     const formPage = document.getElementById('formPage');
     const galleryPage = document.getElementById('galleryPage');
@@ -52,6 +53,7 @@
         thankPage.className = 'hidden';
         formPage.className = 'hidden';
         cardPage.className = 'hidden';
+        navigationBar.className = 'hidden';
         affirmationNav.style.textDecoration = 'none';
         galleryNav.style.textDecoration = 'none';
     })
@@ -85,6 +87,7 @@
     affirmationBtnHome.addEventListener('click', function(){
         landingPage.className = 'hidden';
         formPage.className = 'showing';
+        navigationBar.className = 'showing';
         affirmationNav.style.textDecoration = 'underline';
         galleryNav.style.textDecoration = 'none';
     })
@@ -92,6 +95,7 @@
     galleryBtnHome.addEventListener('click', function(){
         landingPage.className = 'hidden';
         galleryPage.className = 'showing';
+        navigationBar.className = 'showing';
         affirmationNav.style.textDecoration = 'none';
         galleryNav.style.textDecoration = 'underline';
         startGalleryPage();
