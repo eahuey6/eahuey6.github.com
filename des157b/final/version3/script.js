@@ -1,7 +1,7 @@
 
 (function(){
     
-    'add strict'
+    'add strict';
 
     Parse.initialize("HCbN20xBtm13L18iP6BMhZGX0tLkuVpT5FOQkPxm","OEiLitWJqUja2UHjd8bLefjLDzeMXJ1chinz5Q25");
     Parse.serverURL = 'https://parseapi.back4app.com/';
@@ -43,6 +43,12 @@
     const cardContainer = document.querySelector('#card-overlay-container');
     const cardBackBtn = document.querySelector('#card-overlay-backBtn');
 
+
+    // Kursor Code
+    new kursor({
+        type: 3,
+    });
+
     
     
     // ------------------NAV BAR CODE------------------------
@@ -56,7 +62,7 @@
         navigationBar.className = 'hidden';
         affirmationNav.style.textDecoration = 'none';
         galleryNav.style.textDecoration = 'none';
-    })
+    });
 
     affirmationNav.addEventListener('click', function(){
         landingPage.className = 'hidden';
@@ -66,7 +72,7 @@
         cardPage.className = 'hidden';
         affirmationNav.style.textDecoration = 'underline';
         galleryNav.style.textDecoration = 'none';
-    })
+    });
 
     galleryNav.addEventListener('click', function(){
         landingPage.className = 'hidden';
@@ -78,7 +84,7 @@
         galleryNav.style.textDecoration = 'underline';
         startGalleryPage();
         
-    })
+    });
 
 
 
@@ -90,7 +96,7 @@
         navigationBar.className = 'showing';
         affirmationNav.style.textDecoration = 'underline';
         galleryNav.style.textDecoration = 'none';
-    })
+    });
 
     galleryBtnHome.addEventListener('click', function(){
         landingPage.className = 'hidden';
@@ -99,7 +105,7 @@
         affirmationNav.style.textDecoration = 'none';
         galleryNav.style.textDecoration = 'underline';
         startGalleryPage();
-    })
+    });
 
 
 
@@ -171,13 +177,14 @@
         affirmationNav.style.textDecoration = 'none';
         galleryNav.style.textDecoration = 'underline';
         startGalleryPage();
-    })
+    });
+
     entryBtnThank.addEventListener('click', function(){
         formPage.className = 'hidden';
         thankPage.className = 'hidden';
         affirmationNav.style.textDecoration = 'none';
         galleryNav.style.textDecoration = 'none';
-    })
+    });
 
 
 
@@ -304,13 +311,8 @@
             console.error('error while fetching affirmations', error);
 
         }
-
-        
         
     }
-
-
-
 
 
 })();
