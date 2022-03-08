@@ -16,7 +16,7 @@
 
 
     
-
+    // nav buttons
     const logoBtn = document.getElementById('logo');
     const affirmationNav = document.getElementById('affirmation-btn');
     const galleryNav = document.getElementById('gallery-btn');
@@ -74,7 +74,7 @@
         cardPage.className = 'hidden';
         affirmationNav.style.textDecoration = 'none';
         galleryNav.style.textDecoration = 'underline';
-        startGalleryPage()
+        startGalleryPage();
         
     })
 
@@ -94,7 +94,7 @@
         galleryPage.className = 'showing';
         affirmationNav.style.textDecoration = 'none';
         galleryNav.style.textDecoration = 'underline';
-        startGalleryPage()
+        startGalleryPage();
     })
 
 
